@@ -66,7 +66,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ setLoading }) => {
             <div className="inline-flex items-center space-x-3 bg-gradient-to-r from-green-400/20 to-blue-500/20 rounded-full px-8 py-4 mb-8 border border-green-400/30 backdrop-blur-sm">
               <Calendar className="w-6 h-6 text-green-400" />
               <span className="text-green-400 font-bold text-lg">
-                Starting July 19th, 2024
+                Starting July 19th, 2025
               </span>
               <Clock className="w-6 h-6 text-blue-400" />
             </div>
@@ -357,14 +357,14 @@ const LandingPage: React.FC<LandingPageProps> = ({ setLoading }) => {
         <div className="max-w-7xl mx-auto text-center">
           <div className="flex items-center justify-center space-x-3 mb-6">
             <div className="w-10 h-10 bg-gradient-to-r from-green-400 to-blue-500 rounded-lg flex items-center justify-center">
-              <Code2 className="w-6 h-6 text-white" />
+              <span className="text-white text-lg font-bold">&lt;//&gt;</span>
             </div>
             <span className="text-xl font-bold text-white">
               Developer Student Clubs
             </span>
           </div>
           <p className="text-gray-400">
-            Empowering the next generation of developers • 2024
+            Empowering the next generation of developers • 2025
           </p>
         </div>
       </footer>
