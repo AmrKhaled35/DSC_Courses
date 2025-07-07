@@ -8,7 +8,7 @@ import {
   InstructorsUI,
   InstructorsCyber,
 } from "../data/InstructorsData";
-import { ArrowLeft, Code2, Download, Mail, Linkedin } from "lucide-react";
+import { ArrowLeft, Code2, Download, Linkedin } from "lucide-react";
 
 interface WorkshopDetailsPageProps {
   setLoading: (loading: boolean) => void;
@@ -26,7 +26,7 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
     console.log("Workshop Data:", workshopData);
     setWorkshop(workshopData);
     if (workshopData?.id === "ai-ml") {
-      setInstructors([]);
+      setInstructors(InstructorsAi);
     } else if (workshopData?.id === "frontend") {
       setInstructors(InstructorsFront);
     } else if (workshopData?.id === "backend") {

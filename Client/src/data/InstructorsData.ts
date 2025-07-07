@@ -1,29 +1,3 @@
-export const InstructorsAi = [
-  {
-    name: "Dr. Ahmed Hassan",
-    image:
-      "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400",
-    expertise: ["Machine Learning", "Data Science", "Python"],
-    experience: "8+ years in AI research and development",
-    cv: "#",
-  },
-  {
-    name: "Sarah Mohamed",
-    image:
-      "https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&cs=tinysrgb&w=400",
-    expertise: ["Frontend Development", "React", "UI/UX"],
-    experience: "6+ years in web development",
-    cv: "#",
-  },
-  {
-    name: "Omar Khaled",
-    image:
-      "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400",
-    expertise: ["Cybersecurity", "Penetration Testing", "Network Security"],
-    experience: "10+ years in cybersecurity",
-    cv: "#",
-  },
-];
 import Emad from "../assets/front/Emad.jpeg";
 import EmadR from '../assets/front/PDF/Emad-M.Mostafa-DSC-Resume.pdf'
 import Ahmad_Samir from "../assets/front/Ahmad_Samir.jpeg";
@@ -142,4 +116,53 @@ export const InstructorsCyber = [
         cv: AshrafR,
         linkedin : "https://www.linkedin.com/in/abdulrahman-ashraf-0xvalorian/"
     }
+];
+import Ahmad from '../assets/AI/Ahmad.jpg'
+import AhmadRR from '../assets/AI/PDF/Ahmed_CV_2025___June.pdf'
+import Nagham from '../assets/AI/Naghm.jpg'
+import NaghamR from '../assets/AI/PDF/Nagham Wael-1.pdf'
+import JO from '../assets/AI/Jo.jpg'
+import JOR from '../assets/AI/PDF/YousifEdrisLotfyResume 1.pdf'
+import Yossif from '../assets/AI/Mostafa.jpg'
+import YossifR from '../assets/AI/PDF/Youssef_Moustafa_Resume.pdf'
+import Rawan from '../assets/AI/Rawan.jpg'
+import RawanR from '../assets/AI/PDF/Rawan Shoaib 1.pdf'
+export const InstructorsAi = [
+    {
+        name: "Ahmed Labib",
+        image: Ahmad,
+        expertise: ["Machine Learning", "AI", "Python"],
+        cv: AhmadRR,
+        linkedin : "https://www.linkedin.com/in/ahmed-a-a-labib/"
+    },
+    {
+        name: "Nagham Wael",
+        image: Nagham,
+        expertise: ["Machine Learning", "AI", "Python"],
+        cv: NaghamR,
+        linkedin : "https://www.linkedin.com/in/nagham-wael-5aa70a318/"
+    },
+    {
+        name: "Youssef Edris Lotfy",
+        image: JO,
+        expertise: ["Machine Learning", "AI", "Python"],
+        cv: JOR,
+        linkedin : "https://www.linkedin.com/in/yousif-edris/"
+    },
+    {
+        name: "Youssef Mostafa",
+        image: Yossif,
+        expertise: ["Machine Learning", "AI", "Python"],
+        cv: YossifR,
+        linkedin : "https://www.linkedin.com/in/youssef-moustafa821/"
+    }
+    ,
+    {
+        name: "Rawan Shoaib",
+        image: Rawan,
+        expertise: ["Machine Learning", "AI", "Python"],
+        cv: RawanR,
+        linkedin : "https://www.linkedin.com/in/rawan-shoaib-a00471242/"
+    }
+  
 ];
