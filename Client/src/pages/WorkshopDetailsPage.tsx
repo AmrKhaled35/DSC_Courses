@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
+import { Zap } from "lucide-react";
+
 import {
   InstructorsFront,
   InstructorsAi,
@@ -20,7 +22,7 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
   const { id } = useParams<{ id: string }>();
   const [workshop, setWorkshop] = useState<any>(null);
   const [instructors, setInstructors] = useState<any[]>([]);
-
+  const [hovered, setHovered] = useState(false);
   useEffect(() => {
     const workshopData = getWorkshopData(id);
     console.log("Workshop Data:", workshopData);
@@ -778,9 +780,7 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
                 <span className="text-white text-lg font-bold">&lt;//&gt;</span>
               </div>
 
-              <span className="text-xl font-bold text-white">
-                DSC Workshops
-              </span>
+              <span className="text-xl font-bold text-white">DSC Courses</span>
             </Link>
             <Link
               to="/workshops"
@@ -788,7 +788,7 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
               className="flex items-center space-x-2 text-white hover:text-green-400 transition-colors font-semibold"
             >
               <ArrowLeft className="w-4 h-4" />
-              <span>Back to Workshops</span>
+              <span>Back to Courses</span>
             </Link>
           </div>
         </div>
@@ -912,66 +912,89 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
       </section>
 
       {/* Instructors Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900/30">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-16 text-center">
-            Meet Your Instructors
+      <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gray-900/30">
+      {/* Blur Overlay with Dynamic Text */}
+      <div className="absolute inset-0 z-10 backdrop-blur-md bg-black/30 flex items-center justify-center rounded-2xl">
+        <div
+          className="max-w-2xl px-6 text-center cursor-pointer transition-all duration-300"
+          onMouseEnter={() => setHovered(true)}
+          onMouseLeave={() => setHovered(false)}
+        >
+          <h2 className="text-3xl md:text-5xl font-semibold italic text-white flex  items-center justify-center gap-x-4 flex-wrap">
+            {hovered ? (
+              <div className="flex items-center">
+                  Stay tuned for the announcement on social media!
+              </div>
+            ) : (
+              <>
+                <Zap className="w-14 h-14 text-green-400 animate-pulse" />
+                  Coming Soon
+                <Zap className="w-14 h-14 text-blue-400 animate-pulse" />
+              </>
+            )}
           </h2>
+        </div>
+      </div>
 
-          <div className="flex flex-wrap justify-center gap-8">
-            {instructors.map((instructor, index) => (
-              <div
-                key={index}
-                className="w-full sm:w-[45%] lg:w-[30%] bg-gray-900/50 backdrop-blur-md rounded-3xl p-8 border border-gray-800 hover:border-gray-600 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl"
-              >
-                <div className="text-center">
-                  <div className="w-24 h-24 mx-auto mb-6 rounded-full overflow-hidden border-4 border-gray-700">
-                    <img
-                      src={instructor.image}
-                      alt={instructor.name}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
+      <div className="max-w-7xl mx-auto relative z-0">
+        <h2 className="text-3xl md:text-4xl font-bold text-white mb-16 text-center">
+          Meet Your Instructors
+        </h2>
 
-                  <h3 className="text-xl font-bold text-white mb-2">
-                    {instructor.name}
-                  </h3>
+        <div className="flex flex-wrap justify-center gap-8 opacity-30 pointer-events-none">
+          {instructors.map((instructor, index) => (
+            <div
+              key={index}
+              className="w-full sm:w-[45%] lg:w-[30%] bg-gray-900/50 backdrop-blur-md rounded-3xl p-8 border border-gray-800 hover:border-gray-600 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl"
+            >
+              <div className="text-center">
+                <div className="w-24 h-24 mx-auto mb-6 rounded-full overflow-hidden border-4 border-gray-700">
+                  <img
+                    src={instructor.image}
+                    alt={instructor.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
 
-                  <p className="text-gray-400 mb-4">{instructor.experience}</p>
+                <h3 className="text-xl font-bold text-white mb-2">
+                  {instructor.name}
+                </h3>
 
-                  <div className="flex flex-wrap justify-center gap-2 mb-6">
-                    {instructor.expertise.map((skill, skillIndex) => (
-                      <span
-                        key={skillIndex}
-                        className={`px-3 py-1 bg-gradient-to-r ${workshop.gradient} text-white text-sm rounded-full`}
-                      >
-                        {skill}
-                      </span>
-                    ))}
-                  </div>
+                <p className="text-gray-400 mb-4">{instructor.experience}</p>
 
-                  <div className="flex justify-center space-x-4">
-                    <a
-                      href={instructor.cv}
-                      className="flex items-center space-x-2 bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded-full transition-colors"
+                <div className="flex flex-wrap justify-center gap-2 mb-6">
+                  {instructor.expertise.map((skill, skillIndex) => (
+                    <span
+                      key={skillIndex}
+                      className={`px-3 py-1 bg-gradient-to-r ${workshop.gradient} text-white text-sm rounded-full`}
                     >
-                      <Download className="w-4 h-4" />
-                      <span>CV</span>
-                    </a>
-                    <a
-                      href={instructor.linkedin}
-                      className="flex items-center space-x-2 bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded-full transition-colors"
-                    >
-                      <Linkedin className="w-4 h-4" />
-                      <span>LinkedIn</span>
-                    </a>
-                  </div>
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+
+                <div className="flex justify-center space-x-4">
+                  <a
+                    href={instructor.cv}
+                    className="flex items-center space-x-2 bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded-full transition-colors"
+                  >
+                    <Download className="w-4 h-4" />
+                    <span>CV</span>
+                  </a>
+                  <a
+                    href={instructor.linkedin}
+                    className="flex items-center space-x-2 bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded-full transition-colors"
+                  >
+                    <Linkedin className="w-4 h-4" />
+                    <span>LinkedIn</span>
+                  </a>
                 </div>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
-      </section>
+      </div>
+    </section>
 
       {/* CTA Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
