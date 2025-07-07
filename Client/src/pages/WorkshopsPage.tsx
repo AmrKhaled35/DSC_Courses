@@ -45,7 +45,7 @@ const WorkshopsPage: React.FC<WorkshopsPageProps> = ({ setLoading }) => {
     },
     {
       id: 'backend',
-      icon: '🔙',
+      icon: '💻',
       title: 'Backend Development',
       description: 'Build robust server-side applications with C#, .NET, databases, and modern architecture patterns',
       duration: '10 weeks',

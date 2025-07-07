@@ -1,17 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import {
-  ArrowLeft,
-  Code2,
-  Calendar,
-  Clock,
-  Users,
-  Star,
-  Download,
-  User,
-  Mail,
-  Linkedin,
-} from "lucide-react";
+  InstructorsFront,
+  InstructorsAi,
+  InstructorsBack,
+  InstructorsMobile,
+  InstructorsUI,
+  InstructorsCyber,
+} from "../data/InstructorsData";
+import { ArrowLeft, Code2, Download, Mail, Linkedin } from "lucide-react";
 
 interface WorkshopDetailsPageProps {
   setLoading: (loading: boolean) => void;
@@ -22,11 +19,25 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
 }) => {
   const { id } = useParams<{ id: string }>();
   const [workshop, setWorkshop] = useState<any>(null);
+  const [instructors, setInstructors] = useState<any[]>([]);
 
   useEffect(() => {
-    // Simulate loading workshop data
     const workshopData = getWorkshopData(id);
+    console.log("Workshop Data:", workshopData);
     setWorkshop(workshopData);
+    if (workshopData?.id === "ai-ml") {
+      setInstructors([]);
+    } else if (workshopData?.id === "frontend") {
+      setInstructors(InstructorsFront);
+    } else if (workshopData?.id === "backend") {
+      setInstructors(InstructorsBack);
+    } else if (workshopData?.id === "mobile") {
+      setInstructors(InstructorsMobile);
+    } else if (workshopData?.id === "uiux") {
+      setInstructors(InstructorsUI);
+    } else if (workshopData?.id === "cybersecurity") {
+      setInstructors(InstructorsCyber);
+    }
   }, [id]);
 
   const handleNavigation = () => {
@@ -273,7 +284,7 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
       },
       backend: {
         id: "backend",
-        icon: "🔙",
+        icon: "💻",
         title: "Backend Development",
         description:
           "Master the art of server-side development with C# and .NET. Learn to build scalable, secure, and efficient backend systems that power modern applications.",
@@ -744,33 +755,6 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
     },
   ];
 
-  const instructors = [
-    {
-      name: "Dr. Ahmed Hassan",
-      image:
-        "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400",
-      expertise: ["Machine Learning", "Data Science", "Python"],
-      experience: "8+ years in AI research and development",
-      cv: "#",
-    },
-    {
-      name: "Sarah Mohamed",
-      image:
-        "https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&cs=tinysrgb&w=400",
-      expertise: ["Frontend Development", "React", "UI/UX"],
-      experience: "6+ years in web development",
-      cv: "#",
-    },
-    {
-      name: "Omar Khaled",
-      image:
-        "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400",
-      expertise: ["Cybersecurity", "Penetration Testing", "Network Security"],
-      experience: "10+ years in cybersecurity",
-      cv: "#",
-    },
-  ];
-
   if (!workshop) {
     return (
       <div className="min-h-screen bg-black flex items-center justify-center">
@@ -934,11 +918,11 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
             Meet Your Instructors
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="flex flex-wrap justify-center gap-8">
             {instructors.map((instructor, index) => (
               <div
                 key={index}
-                className="bg-gray-900/50 backdrop-blur-md rounded-3xl p-8 border border-gray-800 hover:border-gray-600 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl"
+                className="w-full sm:w-[45%] lg:w-[30%] bg-gray-900/50 backdrop-blur-md rounded-3xl p-8 border border-gray-800 hover:border-gray-600 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl"
               >
                 <div className="text-center">
                   <div className="w-24 h-24 mx-auto mb-6 rounded-full overflow-hidden border-4 border-gray-700">
@@ -975,14 +959,7 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
                       <span>CV</span>
                     </a>
                     <a
-                      href="#"
-                      className="flex items-center space-x-2 bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded-full transition-colors"
-                    >
-                      <Mail className="w-4 h-4" />
-                      <span>Contact</span>
-                    </a>
-                    <a
-                      href="#"
+                      href={instructor.linkedin}
                       className="flex items-center space-x-2 bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded-full transition-colors"
                     >
                       <Linkedin className="w-4 h-4" />

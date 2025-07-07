@@ -36,7 +36,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ setLoading }) => {
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center space-x-3">
               <div className="w-10 h-10 bg-gradient-to-r from-green-400 to-blue-500 rounded-lg flex items-center justify-center">
-                <span className="text-white text-lg font-bold">&lt;//&gt;</span>
+                <span className="text-white text-lg font-bold"><span className="mb-6">&lt;</span>//&gt;</span>
               </div>
               <span className="text-xl font-bold text-white">DSC Courses</span>
             </div>
