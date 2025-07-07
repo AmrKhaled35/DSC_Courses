@@ -186,7 +186,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ setLoading }) => {
                 gradient: "from-red-500 to-orange-500",
               },
               {
-                icon: "🔙",
+                icon: "💻",
                 title: "Backend Development",
                 desc: "Build robust server solutions with C# and .NET frameworks",
                 gradient: "from-blue-500 to-cyan-500",
