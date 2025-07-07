@@ -1,9 +1,8 @@
-import { useState, useEffect } from 'react';
+import { useState} from 'react';
 import {
   BrowserRouter as Router,
   Routes,
   Route,
-  useLocation,
 } from 'react-router-dom';
 
 import LandingPage from './pages/LandingPage';
@@ -11,13 +10,6 @@ import WorkshopsPage from './pages/WorkshopsPage';
 import WorkshopDetailsPage from './pages/WorkshopDetailsPage';
 import LoadingScreen from './components/LoadingScreen';
 function RedirectOnReload() {
-  const location = useLocation();
-
-  useEffect(() => {
-    if (location.pathname !== '/') {
-      window.location.href = '/';
-    }
-  }, []);
 
   return null;
 }
