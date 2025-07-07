@@ -36,11 +36,9 @@ const LandingPage: React.FC<LandingPageProps> = ({ setLoading }) => {
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center space-x-3">
               <div className="w-10 h-10 bg-gradient-to-r from-green-400 to-blue-500 rounded-lg flex items-center justify-center">
-                <Code2 className="w-6 h-6 text-white" />
+                <span className="text-white text-lg font-bold">&lt;//&gt;</span>
               </div>
-              <span className="text-xl font-bold text-white">
-                DSC Courses
-              </span>
+              <span className="text-xl font-bold text-white">DSC Courses</span>
             </div>
             <Link
               to="/workshops"
@@ -233,12 +231,14 @@ const LandingPage: React.FC<LandingPageProps> = ({ setLoading }) => {
 
       {/* Timeline Preview */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-black relative">
+        {/* Background Blurs */}
         <div className="absolute inset-0">
           <div className="absolute top-1/2 left-1/4 w-32 h-32 bg-green-400/5 rounded-full blur-2xl"></div>
           <div className="absolute top-1/4 right-1/4 w-32 h-32 bg-blue-400/5 rounded-full blur-2xl"></div>
         </div>
 
         <div className="max-w-7xl mx-auto relative z-10">
+          {/* Title Section */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               10 Weeks to
@@ -253,9 +253,11 @@ const LandingPage: React.FC<LandingPageProps> = ({ setLoading }) => {
             </p>
           </div>
 
+          {/* Timeline Line */}
           <div className="relative">
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-green-400 to-blue-500 rounded-full"></div>
+            <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-green-400 to-blue-500 rounded-full"></div>
 
+            {/* Timeline Phases */}
             <div className="space-y-12">
               {[
                 {
@@ -281,13 +283,13 @@ const LandingPage: React.FC<LandingPageProps> = ({ setLoading }) => {
               ].map((phase, index) => (
                 <div
                   key={index}
-                  className={`flex items-center ${
-                    index % 2 === 0 ? "justify-start" : "justify-end"
+                  className={`flex flex-col items-center md:flex-row ${
+                    index % 2 === 0 ? "md:justify-start" : "md:justify-end"
                   }`}
                 >
                   <div
-                    className={`w-1/2 ${
-                      index % 2 === 0 ? "pr-8 text-right" : "pl-8"
+                    className={`w-full md:w-1/2 ${
+                      index % 2 === 0 ? "md:pr-8 md:text-right" : "md:pl-8"
                     }`}
                   >
                     <div className="bg-gray-900/50 backdrop-blur-md rounded-2xl p-8 border border-gray-800 hover:border-gray-600 transition-all duration-300 hover:shadow-xl">
@@ -300,7 +302,8 @@ const LandingPage: React.FC<LandingPageProps> = ({ setLoading }) => {
                       <p className="text-gray-400">{phase.desc}</p>
                     </div>
                   </div>
-                  <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-gradient-to-r from-green-400 to-blue-500 rounded-full border-4 border-black shadow-lg"></div>
+                  {/* Timeline Dot */}
+                  <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-gradient-to-r from-green-400 to-blue-500 rounded-full border-4 border-black shadow-lg"></div>
                 </div>
               ))}
             </div>

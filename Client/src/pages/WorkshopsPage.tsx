@@ -8,7 +8,7 @@ interface WorkshopsPageProps {
 
 const WorkshopsPage: React.FC<WorkshopsPageProps> = ({ setLoading }) => {
   useEffect(() => {
-    document.title = 'All Workshops - DSC';
+    // document.title = 'All Workshops - DSC';
   }, []);
 
   const handleNavigation = () => {
@@ -100,8 +100,8 @@ const WorkshopsPage: React.FC<WorkshopsPageProps> = ({ setLoading }) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <Link to="/" onClick={handleNavigation} className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-r from-green-400 to-blue-500 rounded-lg flex items-center justify-center">
-                <Code2 className="w-6 h-6 text-white" />
+            <div className="w-10 h-10 bg-gradient-to-r from-green-400 to-blue-500 rounded-lg flex items-center justify-center">
+                <span className="text-white text-lg font-bold">&lt;//&gt;</span>
               </div>
               <span className="text-xl font-bold text-white">DSC Courses</span>
             </Link>
