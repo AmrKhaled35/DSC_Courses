@@ -533,7 +533,8 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
           },
           {
             title: "Flutter Widgets & Basic UI Design",
-            description: "Learn how Flutter's widget tree works and build beautiful, responsive UIs using layout widgets like Row, Column, Stack, and more.",
+            description:
+              "Learn how Flutter's widget tree works and build beautiful, responsive UIs using layout widgets like Row, Column, Stack, and more.",
           },
           {
             title: "-",
@@ -542,7 +543,8 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
           },
           {
             title: "Navigation & Routing in Flutter",
-            description: "Implement multi-screen navigation using named routes, Navigator, and Route settings to create smooth user flows.",
+            description:
+              "Implement multi-screen navigation using named routes, Navigator, and Route settings to create smooth user flows.",
           },
           {
             title: "-",
@@ -551,7 +553,8 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
           },
           {
             title: "State Management with Provider",
-            description: "Understand the concept of app state, and use the Provider package to manage and share state efficiently across widgets.",
+            description:
+              "Understand the concept of app state, and use the Provider package to manage and share state efficiently across widgets.",
           },
           {
             title: "-",
@@ -560,7 +563,8 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
           },
           {
             title: "Consuming REST APIs in Flutter",
-            description: "Learn how to make HTTP requests, parse JSON data, and connect your app to real APIs for dynamic content.",
+            description:
+              "Learn how to make HTTP requests, parse JSON data, and connect your app to real APIs for dynamic content.",
           },
           {
             title: "-",
@@ -569,7 +573,8 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
           },
           {
             title: "Firebase Authentication in Flutter",
-            description: "Set up Firebase Auth to enable email/password sign-in and integrate real-time authentication into your Flutter app.",
+            description:
+              "Set up Firebase Auth to enable email/password sign-in and integrate real-time authentication into your Flutter app.",
           },
           {
             title: "-",
@@ -578,7 +583,8 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
           },
           {
             title: "Cloud Firestore: Read & Write Data",
-            description: "Connect to Firestore to store and retrieve structured data, and implement real-time syncing for collaborative apps.",
+            description:
+              "Connect to Firestore to store and retrieve structured data, and implement real-time syncing for collaborative apps.",
           },
           {
             title: "-",
@@ -588,7 +594,8 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
           {
             title:
               "Building Custom Widgets & Modern UI & Debugging & Performance Optimization",
-              description: "Create reusable custom widgets, optimize UI performance, and use Flutter DevTools to debug and profile your app.",
+            description:
+              "Create reusable custom widgets, optimize UI performance, and use Flutter DevTools to debug and profile your app.",
           },
           {
             title: "-",
@@ -630,7 +637,8 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
         content: [
           {
             title: "Introduction & Design Theory",
-            description: "Get introduced to the world of UI/UX by understanding design principles, the importance of aesthetics, and how good design solves real problems."
+            description:
+              "Get introduced to the world of UI/UX by understanding design principles, the importance of aesthetics, and how good design solves real problems.",
           },
           {
             title: "-",
@@ -639,15 +647,18 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
           },
           {
             title: "UX Principles & Research Foundations",
-            description: "Explore the core principles of UX and learn how research lays the foundation for user-centered design decisions.",
+            description:
+              "Explore the core principles of UX and learn how research lays the foundation for user-centered design decisions.",
           },
           {
             title: "Practice session: Design Thinking & Research",
-            description: "Apply what you've learned in a hands-on session where you empathize, define problems, ideate, and plan research strategies.",
+            description:
+              "Apply what you've learned in a hands-on session where you empathize, define problems, ideate, and plan research strategies.",
           },
           {
             title: "Personas, User Stories & Journey Mapping",
-            description: "Learn how to create user personas, write impactful user stories, and visualize experiences through customer journey maps.",
+            description:
+              "Learn how to create user personas, write impactful user stories, and visualize experiences through customer journey maps.",
           },
           {
             title: "-",
@@ -656,39 +667,48 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
           },
           {
             title: "Practice session: User Modeling in Action",
-            description: "Work through real-world scenarios to build accurate user personas and define user needs, goals, and pain points.",
+            description:
+              "Work through real-world scenarios to build accurate user personas and define user needs, goals, and pain points.",
           },
           {
             title: "Structuring UX: Flows, Wireframes",
-            description: "Understand how to translate ideas into user flows and wireframes that serve as the blueprint for your interface.",
+            description:
+              "Understand how to translate ideas into user flows and wireframes that serve as the blueprint for your interface.",
           },
           {
             title: "Visual Design & Figma Foundations",
-            description: "Dive into Figma and learn visual design essentials like spacing, alignment, typography, and basic prototyping.",
+            description:
+              "Dive into Figma and learn visual design essentials like spacing, alignment, typography, and basic prototyping.",
           },
           {
             title: "Practic session: Interface Building Workshop",
-            description: "Use Figma to create real interface screens, focusing on usability, consistency, and visual hierarchy.",
+            description:
+              "Use Figma to create real interface screens, focusing on usability, consistency, and visual hierarchy.",
           },
           {
             title: "Systems, Components & Styles",
-            description: "Learn how to build and maintain a design system using reusable components, styles, and layout patterns.",
+            description:
+              "Learn how to build and maintain a design system using reusable components, styles, and layout patterns.",
           },
           {
             title: "Prototyping & Interaction Design",
-            description: "Bring your static designs to life by adding interactivity and motion to enhance the user experience.",
+            description:
+              "Bring your static designs to life by adding interactivity and motion to enhance the user experience.",
           },
           {
             title: "Practice session: Prototyping the Experience",
-            description: "Create an interactive prototype of a real product, simulate user flow, and prepare for usability testing.",
+            description:
+              "Create an interactive prototype of a real product, simulate user flow, and prepare for usability testing.",
           },
           {
             title: "Usability Testing & Design Handoff",
-            description: "Conduct usability tests, gather actionable feedback, and learn how to hand off your designs to developers efficiently.",
+            description:
+              "Conduct usability tests, gather actionable feedback, and learn how to hand off your designs to developers efficiently.",
           },
           {
             title: "Final Presenation",
-            description: "Showcase your final project in a professional format, demonstrating your design decisions, process, and results.",
+            description:
+              "Showcase your final project in a professional format, demonstrating your design decisions, process, and results.",
           },
           {
             title: "-",
@@ -697,7 +717,8 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
           },
           {
             title: "Review on UX",
-            description: "Wrap up the workshop by reviewing key concepts in UX, assessing your progress, and preparing your design portfolio.",
+            description:
+              "Wrap up the workshop by reviewing key concepts in UX, assessing your progress, and preparing your design portfolio.",
           },
           {
             title: "-",
@@ -722,15 +743,45 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
   };
 
   const timelineData = [
-    { week: "Week 1\n19/07 - 25/07", sessions: ["Workshop 01", "Workshop 02"] },
-    { week: "Week 2\n26/07 - 01/08", sessions: ["Workshop 03", "Workshop 04"] },
-    { week: "Week 3\n02/08 - 08/08", sessions: ["Workshop 05", "Workshop 06"] },
-    { week: "Week 4\n09/08 - 15/08", sessions: ["Workshop 07", "Workshop 08"] },
-    { week: "Week 5\n16/08 - 22/08", sessions: ["Workshop 09", "Workshop 10"] },
-    { week: "Week 6\n23/08 - 29/08", sessions: ["Workshop 11", "Workshop 12"] },
-    { week: "Week 7\n30/08 - 05/09", sessions: ["Workshop 13", "Workshop 14"] },
-    { week: "Week 8\n06/09 - 12/09", sessions: ["Workshop 15", "Workshop 16"] },
-    { week: "Week 9\n13/09 - 19/09", sessions: ["Workshop 17", "Workshop 18"] },
+    { week: "Week 1\n19/07 - 25/07", sessions: ["Session 01", "Session 02"] },
+    { week: "Week 2\n26/07 - 01/08", sessions: ["Session 03", "Session 04"] },
+    { week: "Week 3\n02/08 - 08/08", sessions: ["Session 05", "Session 06"] },
+    { week: "Week 4\n09/08 - 15/08", sessions: ["Session 07", "Session 08"] },
+    { week: "Week 5\n16/08 - 22/08", sessions: ["Session 09", "Session 10"] },
+    { week: "Week 6\n23/08 - 29/08", sessions: ["Session 11", "Session 12"] },
+    { week: "Week 7\n30/08 - 05/09", sessions: ["Session 13", "Session 14"] },
+    { week: "Week 8\n06/09 - 12/09", sessions: ["Session 15", "Session 16"] },
+    { week: "Week 9\n13/09 - 19/09", sessions: ["Session 17", "Session 18"] },
+    {
+      week: "Week 10\n20/09 - 26/09",
+      sessions: ["Workshop 19", "Workshop 20"],
+    },
+  ];
+  const timelineDataUi = [
+    { week: "Week 1\n19/07 - 25/07", sessions: ["Session 01"] },
+    { week: "Week 2\n26/07 - 01/08", sessions: ["Session 02", "Session 03"] },
+    { week: "Week 3\n02/08 - 08/08", sessions: ["Session 04"] },
+    { week: "Week 4\n09/08 - 15/08", sessions: ["Session 05", "Session 06"] },
+    { week: "Week 5\n16/08 - 22/08", sessions: ["Session 07", "Session 08"] },
+    { week: "Week 6\n23/08 - 29/08", sessions: ["Session 09", "Session 10"] },
+    { week: "Week 7\n30/08 - 05/09", sessions: ["Session 11", "Session 12"] },
+    { week: "Week 8\n06/09 - 12/09", sessions: ["Session 13"] },
+    { week: "Week 9\n13/09 - 19/09", sessions: ["Session 14"] },
+    {
+      week: "Week 10\n20/09 - 26/09",
+      sessions: ["Workshop 19", "Workshop 20"],
+    },
+  ];
+  const timelineDataMobile = [
+    { week: "Week 1\n19/07 - 25/07", sessions: ["Session 01"] },
+    { week: "Week 2\n26/07 - 01/08", sessions: ["Session 02"] },
+    { week: "Week 3\n02/08 - 08/08", sessions: ["Session 03"] },
+    { week: "Week 4\n09/08 - 15/08", sessions: ["Session 04"] },
+    { week: "Week 5\n16/08 - 22/08", sessions: ["Session 05"] },
+    { week: "Week 6\n23/08 - 29/08", sessions: ["Session 06"] },
+    { week: "Week 7\n30/08 - 05/09", sessions: ["Session 07"] },
+    { week: "Week 8\n06/09 - 12/09", sessions: ["Session 08"] },
+    { week: "Week 9\n13/09 - 19/09", sessions: ["Session 09"] },
     {
       week: "Week 10\n20/09 - 26/09",
       sessions: ["Workshop 19", "Workshop 20"],
@@ -824,7 +875,12 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
                   gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
                 }}
               >
-                {timelineData.map((week, index) => {
+                {(workshop.id === "uiux"
+                  ? timelineDataUi
+                  : workshop.id === "mobile"
+                  ? timelineDataMobile
+                  : timelineData
+                ).map((week, index) => {
                   const validSessions = week.sessions.filter(
                     (_, sessionIndex) => {
                       const contentIndex = index * 2 + sessionIndex;
@@ -849,21 +905,25 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
                             const contentIndex = index * 2 + sessionIndex;
                             const content = workshop.content[contentIndex];
                             if (!content || content.title === "-") return null;
+
                             const isDoubleHeight = validSessions.length === 1;
+
                             return (
                               <div
-                              key={sessionIndex}
-                              className={`text-white text-xs bg-gray-700/50 rounded-lg px-3 py-3 hover:bg-gray-700 transition-colors ${
-                                isDoubleHeight ? 'h-[160px]' : 'h-[75px]'
-                              } flex flex-col justify-center`}
-                            >
-                              <div className="font-semibold mb-1 text-center">{session}</div>
-                              <div className="text-gray-300 text-xs leading-tight text-center">
-                                {content.title.length > 50
-                                  ? content.title.substring(0, 50) + "..."
-                                  : content.title}
+                                key={sessionIndex}
+                                className={`text-white text-xs bg-gray-700/50 rounded-lg px-3 py-3 hover:bg-gray-700 transition-colors ${
+                                  isDoubleHeight ? "h-[160px]" : "h-[75px]"
+                                } flex flex-col justify-center`}
+                              >
+                                <div className="font-semibold mb-1 text-[15px] text-center">
+                                  {session}
+                                </div>
+                                <div className="text-gray-300 text-xs leading-tight text-center">
+                                  {content.title.length > 50
+                                    ? content.title.substring(0, 50) + "..."
+                                    : content.title}
+                                </div>
                               </div>
-                            </div>
                             );
                           })}
                         </div>
