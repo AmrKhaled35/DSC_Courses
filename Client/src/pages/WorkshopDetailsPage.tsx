@@ -527,97 +527,91 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
               "Get started with Flutter development, understand the framework, and create your first mobile application.",
           },
           {
-            title: "Flutter Widgets & Basic UI Design",
+            title: "-",
             description:
               "Master Flutter's widget system and learn to create beautiful, responsive user interfaces.",
           },
           {
-            title: "Navigation & Routing in Flutter",
-            description:
-              "Implement navigation between screens, route management, and create seamless user flows.",
+            title: "Flutter Widgets & Basic UI Design",
+            description: "Learn how Flutter's widget tree works and build beautiful, responsive UIs using layout widgets like Row, Column, Stack, and more.",
           },
           {
-            title: "State Management with Provider",
+            title: "-",
             description:
               "Learn efficient state management techniques using Provider pattern for scalable Flutter apps.",
           },
           {
-            title: "Consuming REST APIs in Flutter",
-            description:
-              "Connect your Flutter app to backend services, handle HTTP requests, and manage API data.",
+            title: "Navigation & Routing in Flutter",
+            description: "Implement multi-screen navigation using named routes, Navigator, and Route settings to create smooth user flows.",
           },
           {
-            title: "Firebase Authentication in Flutter",
+            title: "-",
             description:
               "Implement secure user authentication using Firebase services and manage user sessions.",
           },
           {
-            title: "Cloud Firestore: Read & Write Data",
-            description:
-              "Master Firebase Firestore for real-time database operations and data synchronization.",
+            title: "State Management with Provider",
+            description: "Understand the concept of app state, and use the Provider package to manage and share state efficiently across widgets.",
           },
           {
-            title: "Building Custom Widgets & Modern UI",
+            title: "-",
             description:
               "Create reusable custom widgets and implement modern UI design patterns and animations.",
           },
           {
-            title: "Debugging & Performance Optimization",
-            description:
-              "Learn debugging techniques, performance profiling, and optimization strategies for Flutter apps.",
+            title: "Consuming REST APIs in Flutter",
+            description: "Learn how to make HTTP requests, parse JSON data, and connect your app to real APIs for dynamic content.",
           },
           {
-            title: "Preparing & Publishing Your App on Google Play (Theory)",
+            title: "-",
             description:
               "Understand the app publishing process, store requirements, and deployment strategies.",
           },
           {
-            title: "Advanced State Management",
-            description:
-              "Explore advanced state management solutions like Bloc, Riverpod, and architectural patterns.",
+            title: "Firebase Authentication in Flutter",
+            description: "Set up Firebase Auth to enable email/password sign-in and integrate real-time authentication into your Flutter app.",
           },
           {
-            title: "Local Storage & Offline Capabilities",
+            title: "-",
             description:
               "Implement local data storage, caching strategies, and offline-first app architecture.",
           },
           {
-            title: "Push Notifications",
-            description:
-              "Integrate push notifications to engage users and provide real-time updates.",
+            title: "Cloud Firestore: Read & Write Data",
+            description: "Connect to Firestore to store and retrieve structured data, and implement real-time syncing for collaborative apps.",
           },
           {
-            title: "Camera & Media Integration",
+            title: "-",
             description:
               "Access device camera, handle media files, and implement photo/video functionality.",
           },
           {
-            title: "Maps & Location Services",
-            description:
-              "Integrate maps, GPS functionality, and location-based features in your Flutter apps.",
+            title:
+              "Building Custom Widgets & Modern UI & Debugging & Performance Optimization",
+              description: "Create reusable custom widgets, optimize UI performance, and use Flutter DevTools to debug and profile your app.",
           },
           {
-            title: "Testing Flutter Apps",
+            title: "-",
             description:
               "Master unit testing, widget testing, and integration testing for reliable Flutter applications.",
           },
           {
-            title: "App Store Optimization",
+            title: "-",
             description:
               "Learn strategies for app store visibility, user acquisition, and app marketing.",
           },
           {
-            title: "Monetization Strategies",
+            title: "-",
             description:
               "Explore different app monetization models, in-app purchases, and revenue optimization.",
           },
           {
-            title: "Advanced Flutter Animations",
+            title: "-",
             description:
               "Create stunning animations, custom transitions, and engaging user interactions.",
           },
           {
-            title: "Final Mobile App Project",
+            title: "-",
             description:
               "Build a complete mobile application showcasing all learned concepts and best practices.",
           },
@@ -636,103 +630,89 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
         content: [
           {
             title: "Introduction & Design Theory",
-            description:
-              "Understand the fundamentals of design, design thinking principles, and the role of UI/UX in product development.",
+            description: "Get introduced to the world of UI/UX by understanding design principles, the importance of aesthetics, and how good design solves real problems."
           },
           {
-            title: "User Research Methods",
+            title: "-",
             description:
               "Learn various user research techniques, interviews, surveys, and how to gather meaningful user insights.",
           },
           {
-            title: "Design Thinking Workshop",
-            description:
-              "Apply design thinking methodology to solve real problems through empathy, ideation, and iteration.",
+            title: "UX Principles & Research Foundations",
+            description: "Explore the core principles of UX and learn how research lays the foundation for user-centered design decisions.",
           },
           {
-            title: "Information Architecture",
-            description:
-              "Master the art of organizing and structuring content for optimal user navigation and understanding.",
+            title: "Practice session: Design Thinking & Research",
+            description: "Apply what you've learned in a hands-on session where you empathize, define problems, ideate, and plan research strategies.",
           },
           {
-            title: "Practical Design Thinking",
-            description:
-              "Apply design thinking principles to real-world projects and develop problem-solving skills.",
+            title: "Personas, User Stories & Journey Mapping",
+            description: "Learn how to create user personas, write impactful user stories, and visualize experiences through customer journey maps.",
           },
           {
-            title: "Wireframing Techniques",
+            title: "-",
             description:
               "Learn to create effective wireframes that communicate layout, structure, and functionality clearly.",
           },
           {
-            title: "Visual Design Principles",
-            description:
-              "Master fundamental design principles: hierarchy, contrast, balance, alignment, and visual harmony.",
+            title: "Practice session: User Modeling in Action",
+            description: "Work through real-world scenarios to build accurate user personas and define user needs, goals, and pain points.",
           },
           {
-            title: "Color Theory & Typography",
-            description:
-              "Understand color psychology, typography principles, and how to create cohesive visual systems.",
+            title: "Structuring UX: Flows, Wireframes",
+            description: "Understand how to translate ideas into user flows and wireframes that serve as the blueprint for your interface.",
           },
           {
-            title: "UI Design & Prototyping",
-            description:
-              "Create high-fidelity user interfaces and interactive prototypes using industry-standard tools.",
+            title: "Visual Design & Figma Foundations",
+            description: "Dive into Figma and learn visual design essentials like spacing, alignment, typography, and basic prototyping.",
           },
           {
-            title: "Design Systems",
-            description:
-              "Build scalable design systems with consistent components, patterns, and style guides.",
+            title: "Practic session: Interface Building Workshop",
+            description: "Use Figma to create real interface screens, focusing on usability, consistency, and visual hierarchy.",
           },
           {
-            title: "Interactive Prototyping & Feedback",
-            description:
-              "Create interactive prototypes, conduct user testing, and iterate based on feedback.",
+            title: "Systems, Components & Styles",
+            description: "Learn how to build and maintain a design system using reusable components, styles, and layout patterns.",
           },
           {
-            title: "Usability Testing",
-            description:
-              "Learn to conduct effective usability tests, analyze results, and improve user experiences.",
+            title: "Prototyping & Interaction Design",
+            description: "Bring your static designs to life by adding interactivity and motion to enhance the user experience.",
           },
           {
-            title: "Accessibility in Design",
-            description:
-              "Design inclusive experiences that work for users with diverse abilities and needs.",
+            title: "Practice session: Prototyping the Experience",
+            description: "Create an interactive prototype of a real product, simulate user flow, and prepare for usability testing.",
           },
           {
-            title: "Mobile UI Design",
-            description:
-              "Master mobile-specific design patterns, touch interactions, and responsive design principles.",
+            title: "Usability Testing & Design Handoff",
+            description: "Conduct usability tests, gather actionable feedback, and learn how to hand off your designs to developers efficiently.",
           },
           {
-            title: "Web UI Design",
-            description:
-              "Create effective web interfaces, understand web constraints, and design for different screen sizes.",
+            title: "Final Presenation",
+            description: "Showcase your final project in a professional format, demonstrating your design decisions, process, and results.",
           },
           {
-            title: "Animation in UI",
+            title: "-",
             description:
               "Learn to use motion design effectively to enhance user experience and provide feedback.",
           },
           {
-            title: "Review on UI Design",
-            description:
-              "Comprehensive review of UI design principles, best practices, and portfolio development.",
+            title: "Review on UX",
+            description: "Wrap up the workshop by reviewing key concepts in UX, assessing your progress, and preparing your design portfolio.",
           },
           {
-            title: "User Experience Strategy",
+            title: "-",
             description:
               "Understand UX strategy, business goals alignment, and measuring design success.",
           },
           {
-            title: "Review on UX Design",
+            title: "-",
             description:
-              "Complete UX process review, case study development, and professional presentation skills.",
+              "Understand UX strategy, business goals alignment, and measuring design success.",
           },
           {
-            title: "Final Design Project Presentation",
+            title: "-",
             description:
-              "Present your comprehensive design project showcasing your complete UI/UX design process.",
+              "Understand UX strategy, business goals alignment, and measuring design success.",
           },
         ],
       },
@@ -838,42 +818,59 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
               <h3 className="text-2xl font-bold text-white mb-8 text-center">
                 10-Week Schedule
               </h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
-                {timelineData.map((week, index) => (
-                  <div
-                    key={index}
-                    className="bg-gray-800/50 rounded-2xl p-4 border border-gray-700 hover:border-gray-600 transition-colors"
-                  >
-                    <div className="text-center">
-                      <div className="text-green-400 font-semibold text-sm mb-3 whitespace-pre-line">
-                        {week.week}
-                      </div>
-                      <div className="space-y-3">
-                        {week.sessions.map((session, sessionIndex) => {
-                          const contentIndex = index * 2 + sessionIndex;
-                          const content = workshop.content[contentIndex];
-                          return (
-                            <div
+              <div
+                className="grid gap-4"
+                style={{
+                  gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
+                }}
+              >
+                {timelineData.map((week, index) => {
+                  const validSessions = week.sessions.filter(
+                    (_, sessionIndex) => {
+                      const contentIndex = index * 2 + sessionIndex;
+                      const content = workshop.content[contentIndex];
+                      return content && content.title !== "-";
+                    }
+                  );
+
+                  if (validSessions.length === 0) return null;
+
+                  return (
+                    <div
+                      key={index}
+                      className="bg-gray-800/50 rounded-2xl p-4 border border-gray-700 hover:border-gray-600 transition-colors"
+                    >
+                      <div className="text-center">
+                        <div className="text-green-400 font-semibold text-sm mb-3 whitespace-pre-line">
+                          {week.week}
+                        </div>
+                        <div className="space-y-3">
+                          {week.sessions.map((session, sessionIndex) => {
+                            const contentIndex = index * 2 + sessionIndex;
+                            const content = workshop.content[contentIndex];
+                            if (!content || content.title === "-") return null;
+                            const isDoubleHeight = validSessions.length === 1;
+                            return (
+                              <div
                               key={sessionIndex}
-                              className="text-white text-xs bg-gray-700/50 rounded-lg py-3 px-3 hover:bg-gray-700 transition-colors"
+                              className={`text-white text-xs bg-gray-700/50 rounded-lg px-3 py-3 hover:bg-gray-700 transition-colors ${
+                                isDoubleHeight ? 'h-[160px]' : 'h-[75px]'
+                              } flex flex-col justify-center`}
                             >
-                              <div className="font-semibold mb-1">
-                                {session}
+                              <div className="font-semibold mb-1 text-center">{session}</div>
+                              <div className="text-gray-300 text-xs leading-tight text-center">
+                                {content.title.length > 50
+                                  ? content.title.substring(0, 50) + "..."
+                                  : content.title}
                               </div>
-                              {content && (
-                                <div className="text-gray-300 text-xs leading-tight">
-                                  {content.title.length > 50
-                                    ? content.title.substring(0, 50) + "..."
-                                    : content.title}
-                                </div>
-                              )}
                             </div>
-                          );
-                        })}
+                            );
+                          })}
+                        </div>
                       </div>
                     </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             </div>
           </div>
@@ -884,28 +881,30 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
               Detailed Content
             </h3>
             <div className="grid grid-cols-1 gap-6">
-              {workshop.content.map((item: any, index: number) => (
-                <div
-                  key={index}
-                  className="flex items-start space-x-6 bg-gray-800/30 rounded-2xl p-6 border border-gray-700 hover:border-gray-600 transition-all duration-300 hover:bg-gray-800/50"
-                >
+              {workshop.content
+                .filter((item: any) => item.title !== "-")
+                .map((item: any, index: number) => (
                   <div
-                    className={`w-12 h-12 bg-gradient-to-r ${workshop.gradient} rounded-xl flex items-center justify-center flex-shrink-0`}
+                    key={index}
+                    className="flex items-start space-x-6 bg-gray-800/30 rounded-2xl p-6 border border-gray-700 hover:border-gray-600 transition-all duration-300 hover:bg-gray-800/50"
                   >
-                    <span className="text-white font-bold text-lg">
-                      {index + 1}
-                    </span>
+                    <div
+                      className={`w-12 h-12 bg-gradient-to-r ${workshop.gradient} rounded-xl flex items-center justify-center flex-shrink-0`}
+                    >
+                      <span className="text-white font-bold text-lg">
+                        {index + 1}
+                      </span>
+                    </div>
+                    <div className="flex-1">
+                      <h4 className="text-white font-bold text-lg mb-3 leading-tight">
+                        {item.title}
+                      </h4>
+                      <p className="text-gray-400 leading-relaxed">
+                        {item.description}
+                      </p>
+                    </div>
                   </div>
-                  <div className="flex-1">
-                    <h4 className="text-white font-bold text-lg mb-3 leading-tight">
-                      {item.title}
-                    </h4>
-                    <p className="text-gray-400 leading-relaxed">
-                      {item.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
+                ))}
             </div>
           </div>
         </div>
