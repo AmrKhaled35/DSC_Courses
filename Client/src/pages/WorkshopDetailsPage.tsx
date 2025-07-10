@@ -1104,7 +1104,7 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
             </span>
           </div>
           <p className="text-gray-400">
-            Empowering the next generation of developers • 2025
+            Your journey to mastery starts here • 2025
           </p>
         </div>
       </footer>
