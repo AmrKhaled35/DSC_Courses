@@ -248,7 +248,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ setLoading }) => {
               </span>
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              A carefully structured journey with 2 Courses per week, building
+              A carefully structured journey with 2 Sessions per week, building
               your skills progressively
             </p>
           </div>
