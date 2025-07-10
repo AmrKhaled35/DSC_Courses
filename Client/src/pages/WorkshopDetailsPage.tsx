@@ -973,34 +973,40 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
       {/* Instructors Section */}
       <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gray-900/30">
         {/* Blur Overlay with Dynamic Text */}
-        <div className="absolute inset-0 z-10 backdrop-blur-md bg-black/30 flex items-center justify-center rounded-2xl">
-          <div
-            className="max-w-2xl px-6 text-center cursor-pointer transition-all duration-300"
-            onMouseEnter={() => setHovered(true)}
-            onMouseLeave={() => setHovered(false)}
-          >
-            <h2 className="text-3xl md:text-5xl font-semibold italic text-white flex  items-center justify-center gap-x-4 flex-wrap">
-              {hovered ? (
-                <div className="flex items-center">
-                  Stay tuned for the announcement on social media!
-                </div>
-              ) : (
-                <>
-                  <Zap className="w-14 h-14 text-green-400 animate-pulse" />
-                  Coming Soon
-                  <Zap className="w-14 h-14 text-blue-400 animate-pulse" />
-                </>
-              )}
-            </h2>
+        {workshop?.id !== "uiux" && (
+          <div className="absolute inset-0 z-10 backdrop-blur-md bg-black/30 flex items-center justify-center rounded-2xl">
+            <div
+              className="max-w-2xl px-6 text-center cursor-pointer transition-all duration-300"
+              onMouseEnter={() => setHovered(true)}
+              onMouseLeave={() => setHovered(false)}
+            >
+              <h2 className="text-3xl md:text-5xl font-semibold italic text-white flex items-center justify-center gap-x-4 flex-wrap">
+                {hovered ? (
+                  <div className="flex items-center">
+                    Stay tuned for the announcement on social media!
+                  </div>
+                ) : (
+                  <>
+                    <Zap className="w-14 h-14 text-green-400 animate-pulse" />
+                    Coming Soon
+                    <Zap className="w-14 h-14 text-blue-400 animate-pulse" />
+                  </>
+                )}
+              </h2>
+            </div>
           </div>
-        </div>
+        )}
 
         <div className="max-w-7xl mx-auto relative z-0">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-16 text-center">
             Meet Your Instructors
           </h2>
 
-          <div className="flex flex-wrap justify-center gap-8 opacity-30 pointer-events-none">
+          <div
+            className={`flex flex-wrap justify-center gap-8 ${
+              workshop?.id !== "uiux" ? "opacity-30 pointer-events-none" : ""
+            }`}
+          >
             {instructors.map((instructor, index) => (
               <div
                 key={index}
