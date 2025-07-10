@@ -152,7 +152,7 @@ const WorkshopsPage: React.FC<WorkshopsPageProps> = ({ setLoading }) => {
           </h1>
 
           <p className="text-xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed ">
-            Explore our comprehensive workshop tracks designed to take you from
+            Explore our comprehensive Course tracks designed to take you from
             beginner to professional. Each track includes 20 hands-on sessions
             over 10 weeks.
           </p>
@@ -239,7 +239,7 @@ const WorkshopsPage: React.FC<WorkshopsPageProps> = ({ setLoading }) => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             <div className="bg-gray-900/50 backdrop-blur-md rounded-2xl p-8 border border-gray-800">
               <div className="text-4xl font-bold text-white mb-2">6</div>
-              <div className="text-gray-400">Workshop Tracks</div>
+              <div className="text-gray-400">Course Tracks</div>
             </div>
             <div className="bg-gray-900/50 backdrop-blur-md rounded-2xl p-8 border border-gray-800">
               <div className="text-4xl font-bold text-white mb-2">10</div>

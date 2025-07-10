@@ -248,7 +248,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ setLoading }) => {
               </span>
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              A carefully structured journey with 2 workshops per week, building
+              A carefully structured journey with 2 Courses per week, building
               your skills progressively
             </p>
           </div>
@@ -337,7 +337,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ setLoading }) => {
 
           <p className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
             Join hundreds of students who have transformed their careers through
-            our comprehensive workshop program
+            our comprehensive Course program
           </p>
 
           <Link
@@ -346,7 +346,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ setLoading }) => {
             className="group inline-flex items-center space-x-3 bg-gradient-to-r from-green-400 to-blue-500 text-white px-12 py-6 rounded-full font-bold text-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
           >
             <Calendar className="w-6 h-6" />
-            <span>View All Workshops</span>
+            <span>View All Courses</span>
             <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>

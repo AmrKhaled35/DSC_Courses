@@ -58,7 +58,7 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
         description:
           "Embark on a transformative journey into the world of Artificial Intelligence and Machine Learning. This comprehensive track will take you from understanding basic concepts to building sophisticated neural networks and deploying AI solutions.",
         story:
-          "In a world where data is the new oil, AI and Machine Learning have become the engines that drive innovation. From recommendation systems that know your preferences better than you do, to autonomous vehicles navigating complex roads, AI is reshaping every industry. This workshop will equip you with the skills to be part of this revolution.",
+          "In a world where data is the new oil, AI and Machine Learning have become the engines that drive innovation. From recommendation systems that know your preferences better than you do, to autonomous vehicles navigating complex roads, AI is reshaping every industry. This Course will equip you with the skills to be part of this revolution.",
         gradient: "from-purple-500 to-pink-500",
         bgGradient: "from-purple-500/10 to-pink-500/10",
         content: [
@@ -178,7 +178,7 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
         description:
           "Enter the critical world of cybersecurity where you'll learn to protect digital assets, understand threat landscapes, and master the art of ethical hacking and penetration testing.",
         story:
-          "In an interconnected world where cyber threats evolve daily, cybersecurity professionals stand as digital guardians. From protecting personal data to securing critical infrastructure, cybersecurity experts are the unsung heroes of our digital age. This workshop will train you to think like both an attacker and defender.",
+          "In an interconnected world where cyber threats evolve daily, cybersecurity professionals stand as digital guardians. From protecting personal data to securing critical infrastructure, cybersecurity experts are the unsung heroes of our digital age. This Course will train you to think like both an attacker and defender.",
         gradient: "from-red-500 to-orange-500",
         bgGradient: "from-red-500/10 to-orange-500/10",
         content: [
@@ -291,7 +291,7 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
         description:
           "Master the art of server-side development with C# and .NET. Learn to build scalable, secure, and efficient backend systems that power modern applications.",
         story:
-          "Behind every great application lies a robust backend system. Like the foundation of a skyscraper, backend development provides the structure, security, and scalability that users never see but always depend on. This workshop will teach you to architect and build these critical systems.",
+          "Behind every great application lies a robust backend system. Like the foundation of a skyscraper, backend development provides the structure, security, and scalability that users never see but always depend on. This Course will teach you to architect and build these critical systems.",
         gradient: "from-blue-500 to-cyan-500",
         bgGradient: "from-blue-500/10 to-cyan-500/10",
         content: [
@@ -404,7 +404,7 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
         description:
           "Create stunning, interactive user interfaces that captivate users. Master HTML, CSS, JavaScript, and modern frameworks to build responsive, accessible web applications.",
         story:
-          "The frontend is where users meet technology. It's the bridge between human needs and digital solutions. Every click, scroll, and interaction is carefully crafted by frontend developers who understand both aesthetics and functionality. This workshop will teach you to create digital experiences that users love.",
+          "The frontend is where users meet technology. It's the bridge between human needs and digital solutions. Every click, scroll, and interaction is carefully crafted by frontend developers who understand both aesthetics and functionality. This Course will teach you to create digital experiences that users love.",
         gradient: "from-green-500 to-teal-500",
         bgGradient: "from-green-500/10 to-teal-500/10",
         content: [
@@ -517,7 +517,7 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
         description:
           "Build beautiful, natively compiled applications for mobile from a single codebase using Flutter. Learn to create apps that work seamlessly on both iOS and Android.",
         story:
-          "Mobile devices have become extensions of ourselves, and mobile apps are the tools we use to navigate our daily lives. Flutter represents the future of mobile development - write once, run everywhere. This workshop will teach you to create mobile experiences that feel native on every platform.",
+          "Mobile devices have become extensions of ourselves, and mobile apps are the tools we use to navigate our daily lives. Flutter represents the future of mobile development - write once, run everywhere. This Course will teach you to create mobile experiences that feel native on every platform.",
         gradient: "from-indigo-500 to-purple-500",
         bgGradient: "from-indigo-500/10 to-purple-500/10",
         content: [
@@ -631,7 +631,7 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
         description:
           "Design beautiful, intuitive user experiences that solve real problems. Learn design thinking, user research, prototyping, and the principles that make great digital products.",
         story:
-          "Great design is invisible - it solves problems so elegantly that users don't even notice the complexity behind the simplicity. UI/UX designers are the architects of digital experiences, crafting interfaces that are both beautiful and functional. This workshop will teach you to think like a user and design like a professional.",
+          "Great design is invisible - it solves problems so elegantly that users don't even notice the complexity behind the simplicity. UI/UX designers are the architects of digital experiences, crafting interfaces that are both beautiful and functional. This Course will teach you to think like a user and design like a professional.",
         gradient: "from-pink-500 to-rose-500",
         bgGradient: "from-pink-500/10 to-rose-500/10",
         content: [
@@ -681,7 +681,7 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
               "Dive into Figma and learn visual design essentials like spacing, alignment, typography, and basic prototyping.",
           },
           {
-            title: "Practic session: Interface Building Workshop",
+            title: "Practic session: Interface Building Course",
             description:
               "Use Figma to create real interface screens, focusing on usability, consistency, and visual hierarchy.",
           },
@@ -718,7 +718,7 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
           {
             title: "Review on UX",
             description:
-              "Wrap up the workshop by reviewing key concepts in UX, assessing your progress, and preparing your design portfolio.",
+              "Wrap up the Course by reviewing key concepts in UX, assessing your progress, and preparing your design portfolio.",
           },
           {
             title: "-",
@@ -754,7 +754,7 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
     { week: "Week 9\n13/09 - 19/09", sessions: ["Session 17", "Session 18"] },
     {
       week: "Week 10\n20/09 - 26/09",
-      sessions: ["Workshop 19", "Workshop 20"],
+      sessions: ["Session 19", "Session 20"],
     },
   ];
   const timelineDataUi = [
@@ -860,7 +860,7 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-16 text-center">
-            Workshop Content & Timeline
+            Course Content & Timeline
           </h2>
 
           {/* Enhanced Timeline with Content Names */}
