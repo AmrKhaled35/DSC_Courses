@@ -346,12 +346,12 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
               "Learn common design patterns like Singleton, Factory, Observer, and their practical applications.",
           },
           {
-            title: "LINQ Fundamentals",
+            title: "LINQ ",
             description:
               "Master Language Integrated Query for efficient data manipulation and querying in C#.",
           },
           {
-            title: "Advanced LINQ",
+            title: "LINQ",
             description:
               "Explore complex LINQ operations, custom extensions, and performance optimization techniques.",
           },
@@ -366,37 +366,37 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
               "Master complex relationships, migrations, performance optimization, and EF best practices.",
           },
           {
-            title: "ASP.NET Core Basics",
+            title: "ASP.NET",
             description:
               "Build your first web applications with ASP.NET Core framework and understand MVC architecture.",
           },
           {
-            title: "ASP.NET Web APIs",
+            title: "ASP.NET",
             description:
               "Create RESTful APIs, handle HTTP requests, and implement proper API design principles.",
           },
           {
-            title: "ASP.NET Authentication & Authorization",
+            title: "ASP.NET",
             description:
               "Implement secure authentication systems, JWT tokens, and role-based authorization.",
           },
           {
-            title: "ASP.NET Advanced Topics",
+            title: "ASP.NET",
             description:
               "Explore middleware, dependency injection, configuration management, and advanced ASP.NET features.",
           },
           {
-            title: "Microservices Architecture",
+            title: "ASP.NET",
             description:
-              "Learn to design and implement microservices-based applications for scalability and maintainability.",
+              "Explore middleware, dependency injection, configuration management, and advanced ASP.NET features.",
           },
           {
-            title: "Testing & Deployment",
+            title: "-",
             description:
               "Master unit testing, integration testing, and deployment strategies for production applications.",
           },
           {
-            title: "Final Backend Project",
+            title: "-",
             description:
               "Build a complete backend system demonstrating all learned concepts and best practices.",
           },
