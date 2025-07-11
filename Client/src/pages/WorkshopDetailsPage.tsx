@@ -1090,7 +1090,7 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
       {/* Instructors Section */}
       <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gray-900/30">
         {/* Blur Overlay with Dynamic Text */}
-        {workshop?.id !== "uiux" && (
+        {workshop?.id !== "uiux" && workshop?.id !== "frontend" && (
           <div className="absolute inset-0 z-10 backdrop-blur-md bg-black/30 flex items-center justify-center rounded-2xl">
             <div
               className="max-w-2xl px-6 text-center cursor-pointer transition-all duration-300"
