@@ -251,15 +251,15 @@ const WorkshopsPage: React.FC<WorkshopsPageProps> = ({ setLoading }) => {
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             <div className="bg-gray-900/50 backdrop-blur-md rounded-2xl p-8 border border-gray-800">
-              <div className="text-4xl font-bold text-white mb-2">6</div>
+              <div className="text-4xl font-bold text-white mb-2">7</div>
               <div className="text-gray-400">Course Tracks</div>
             </div>
             <div className="bg-gray-900/50 backdrop-blur-md rounded-2xl p-8 border border-gray-800">
-              <div className="text-4xl font-bold text-white mb-2">10</div>
+              <div className="text-4xl font-bold text-white mb-2">9</div>
               <div className="text-gray-400">Weeks Duration</div>
             </div>
             <div className="bg-gray-900/50 backdrop-blur-md rounded-2xl p-8 border border-gray-800">
-              <div className="text-4xl font-bold text-white mb-2">120</div>
+              <div className="text-4xl font-bold text-white mb-2">111</div>
               <div className="text-gray-400">Total Sessions</div>
             </div>
             <div className="bg-gray-900/50 backdrop-blur-md rounded-2xl p-8 border border-gray-800">
