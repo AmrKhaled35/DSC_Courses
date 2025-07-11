@@ -248,7 +248,7 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
               "Understand Broken Access Control, Insecure Direct Object References, and privilege escalation techniques.",
           },
           {
-            title: "Reconnaissance Techniques",
+            title: "Recon",
             description:
               "Learn information gathering techniques used in the initial phases of penetration testing.",
           },
@@ -258,32 +258,31 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
               "Explore the world of ethical hacking through bug bounty programs and responsible disclosure.",
           },
           {
-            title: "Vulnerability Assessment",
-            description:
-              "Learn systematic approaches to identifying and assessing security vulnerabilities in systems.",
+            title: "Reporting",
+            description: "Master how to document, present, and communicate security findings effectively to stakeholders.",            
           },
           {
-            title: "Penetration Testing Methodology",
+            title: "-",
             description:
               "Master structured penetration testing frameworks and methodologies used by professionals.",
           },
           {
-            title: "Social Engineering",
+            title: "-",
             description:
               "Understand human-based attacks and how to protect against psychological manipulation techniques.",
           },
           {
-            title: "Incident Response",
+            title: "-",
             description:
               "Learn how to respond to security incidents, contain breaches, and recover from attacks.",
           },
           {
-            title: "Reporting & Documentation",
+            title: "-",
             description:
               "Master the art of writing professional security reports and documenting findings effectively.",
           },
           {
-            title: "Capstone Security Project",
+            title: "-",
             description:
               "Apply all your cybersecurity knowledge in a comprehensive project simulating real-world scenarios.",
           },
