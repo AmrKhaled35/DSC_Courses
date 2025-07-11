@@ -1121,7 +1121,7 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
 
           <div
             className={`flex flex-wrap justify-center gap-8 ${
-              workshop?.id !== "uiux" ? "opacity-30 pointer-events-none" : ""
+              workshop?.id !== "uiux" || workshop?.id !== "frontend" ? "opacity-30 pointer-events-none" : ""
             }`}
           >
             {instructors.map((instructor, index) => (
