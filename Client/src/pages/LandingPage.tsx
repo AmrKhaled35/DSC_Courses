@@ -66,7 +66,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ setLoading }) => {
             <div className="inline-flex items-center space-x-3 bg-gradient-to-r from-green-400/20 to-blue-500/20 rounded-full px-8 py-4 mb-8 border border-green-400/30 backdrop-blur-sm">
               <Calendar className="w-6 h-6 text-green-400" />
               <span className="text-green-400 font-bold text-lg">
-                Starting July 19th, 2025
+                Starting July 26th, 2025
               </span>
               <Clock className="w-6 h-6 text-blue-400" />
             </div>

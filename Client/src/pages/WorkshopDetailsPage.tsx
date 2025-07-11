@@ -741,6 +741,119 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
           },
         ],
       },
+      videoEditing: {
+        id: "videoEditing",
+        icon: "🎬",
+        title: "Video Editing",
+        description:
+          "Learn professional video editing skills using Adobe Premiere Pro. From importing footage to final export, master every stage of the editing workflow to create compelling video content.",
+        story:
+          "Video editing is where storytelling comes alive. Whether you're crafting cinematic sequences, tutorials, or social media content, great editing transforms raw footage into meaningful experiences. This course will take you from beginner to confident editor with practical, hands-on learning.",
+        gradient: "from-red-500 to-pink-500",
+        bgGradient: "from-red-500/10 to-pink-500/10",
+        content: [
+          {
+            title: "Introduction to Video Editing & Premiere Pro",
+            description:
+              "Get familiar with the video editing process and explore the Premiere Pro interface and its capabilities.",
+          },
+          {
+            title: "Creating and Managing Projects",
+            description:
+              "Learn how to set up new projects, manage assets, and maintain organized workflows.",
+          },
+          {
+            title: "User Interface Deep Dive",
+            description:
+              "Explore panels, tools, and workspaces in Premiere Pro to streamline your editing process.",
+          },
+          {
+            title: "Importing and Managing Media",
+            description:
+              "Understand media formats, import methods, and organization within the project panel.",
+          },
+          {
+            title: "Previewing and Selecting Footage",
+            description:
+              "Master the art of selecting the best takes using source monitors and markers.",
+          },
+          {
+            title: "Timeline Basics",
+            description:
+              "Learn how to navigate the timeline, add clips, and make basic edits.",
+          },
+          {
+            title: "Core Editing Tools",
+            description:
+              "Use essential editing tools like razor, slip, slide, and ripple edit effectively.",
+          },
+          {
+            title: "Working with Audio",
+            description:
+              "Edit audio tracks, adjust volume, and apply audio effects to enhance your project.",
+          },
+          {
+            title: "Syncing and Enhancing Audio",
+            description:
+              "Learn techniques for syncing external audio and cleaning up noisy recordings.",
+          },
+          {
+            title: "Video Transitions",
+            description:
+              "Apply professional transitions between clips to create smooth visual flow.",
+          },
+          {
+            title: "Motion and Keyframe Animation",
+            description:
+              "Use keyframes to animate scale, position, rotation, and opacity over time.",
+          },
+          {
+            title: "Working with Titles & Text",
+            description:
+              "Add and customize titles, lower-thirds, and subtitles to your videos.",
+          },
+          {
+            title: "Advanced Text Animation",
+            description:
+              "Create dynamic and engaging animated text using keyframes and effects.",
+          },
+          {
+            title: "Color Correction Basics",
+            description:
+              "Adjust exposure, contrast, and white balance to correct your video’s appearance.",
+          },
+          {
+            title: "Color Grading Techniques",
+            description:
+              "Use color grading tools and LUTs to establish visual tone and mood.",
+          },
+          {
+            title: "Visual Effects Essentials",
+            description:
+              "Explore basic visual effects, blending modes, and track mattes to elevate your edits.",
+          },
+          {
+            title: "Green Screen & Compositing",
+            description:
+              "Learn chroma keying techniques and how to blend video layers effectively.",
+          },
+          {
+            title: "Speed and Time Effects",
+            description:
+              "Control playback speed, apply slow-motion or fast-forward, and use time remapping.",
+          },
+          {
+            title: "Exporting Projects",
+            description:
+              "Learn how to export videos with the correct settings for different platforms and purposes.",
+          },
+          {
+            title: "Final Project and Advanced Tips",
+            description:
+              "Apply your skills to a final project and explore professional editing tips and tricks.",
+          },
+        ],
+      },
     };
 
     return workshops[workshopId || ""] || null;

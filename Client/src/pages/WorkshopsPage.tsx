@@ -25,8 +25,8 @@ const WorkshopsPage: React.FC<WorkshopsPageProps> = ({ setLoading }) => {
       title: "AI & Machine Learning",
       description:
         "Master artificial intelligence and machine learning from fundamentals to advanced neural networks",
-      duration: "10 weeks",
-      sessions: "20 sessions",
+      duration: "9 weeks",
+      sessions: "18 sessions",
       level: "Beginner to Advanced",
       gradient: "from-purple-500 to-pink-500",
       bgGradient: "from-purple-500/10 to-pink-500/10",
@@ -38,8 +38,8 @@ const WorkshopsPage: React.FC<WorkshopsPageProps> = ({ setLoading }) => {
       title: "Cybersecurity",
       description:
         "Learn to protect digital assets and understand security fundamentals, penetration testing, and bug bounty",
-      duration: "10 weeks",
-      sessions: "20 sessions",
+      duration: "8 weeks",
+      sessions: "15 sessions",
       level: "Beginner to Advanced",
       gradient: "from-red-500 to-orange-500",
       bgGradient: "from-red-500/10 to-orange-500/10",
@@ -51,8 +51,8 @@ const WorkshopsPage: React.FC<WorkshopsPageProps> = ({ setLoading }) => {
       title: "Backend Development",
       description:
         "Build robust server-side applications with C#, .NET, databases, and modern architecture patterns",
-      duration: "10 weeks",
-      sessions: "20 sessions",
+      duration: "9 weeks",
+      sessions: "18 sessions",
       level: "Beginner to Advanced",
       gradient: "from-blue-500 to-cyan-500",
       bgGradient: "from-blue-500/10 to-cyan-500/10",
@@ -77,8 +77,8 @@ const WorkshopsPage: React.FC<WorkshopsPageProps> = ({ setLoading }) => {
       title: "Mobile Development (Flutter)",
       description:
         "Build cross-platform mobile applications with Flutter and deploy to both iOS and Android",
-      duration: "10 weeks",
-      sessions: "20 sessions",
+      duration: "8 weeks",
+      sessions: "8 sessions",
       level: "Beginner to Advanced",
       gradient: "from-indigo-500 to-purple-500",
       bgGradient: "from-indigo-500/10 to-purple-500/10",
@@ -90,12 +90,25 @@ const WorkshopsPage: React.FC<WorkshopsPageProps> = ({ setLoading }) => {
       title: "UI/UX Design",
       description:
         "Design beautiful and intuitive user experiences with modern design principles and tools",
-      duration: "10 weeks",
-      sessions: "20 sessions",
+      duration: "9 weeks",
+      sessions: "14 sessions",
       level: "Beginner to Advanced",
       gradient: "from-pink-500 to-rose-500",
       bgGradient: "from-pink-500/10 to-rose-500/10",
       borderGradient: "from-pink-500/50 to-rose-500/50",
+    },
+    {
+      id: "videoEditing",
+      icon: "🎬",
+      title: "Video Editing",
+      description:
+        "Master the art of video editing using Adobe Premiere Pro. Learn everything from basic cuts to advanced effects and final exports.",
+      duration: "10 weeks",
+      sessions: "20 sessions",
+      level: "Beginner to Intermediate",
+      gradient: "from-yellow-500 to-orange-500",
+      bgGradient: "from-yellow-500/10 to-orange-500/10",
+      borderGradient: "from-yellow-500/50 to-orange-500/50",
     },
   ];
 
@@ -176,27 +189,28 @@ const WorkshopsPage: React.FC<WorkshopsPageProps> = ({ setLoading }) => {
                   animationDelay: `${index * 100}ms`,
                 }}
               >
-                {/* Gradient Glow on Hover */}
+                {workshop.id === "videoEditing" && (
+                  <div className="absolute top-4 right-4 bg-yellow-500 text-black text-xs font-bold px-3 py-1 rounded-full shadow-md z-10">
+                    New
+                  </div>
+                )}
+
                 <div
                   className={`absolute inset-0 bg-gradient-to-r ${workshop.borderGradient} rounded-3xl opacity-0 group-hover:opacity-20 transition-opacity duration-500 -z-10 blur-xl`}
                 ></div>
 
-                {/* Workshop Icon */}
                 <div className="text-6xl mb-6 group-hover:scale-110 transition-transform duration-300">
                   {workshop.icon}
                 </div>
 
-                {/* Workshop Title */}
                 <h3 className="text-2xl font-bold text-white mb-4">
                   {workshop.title}
                 </h3>
 
-                {/* Workshop Description */}
                 <p className="text-gray-400 mb-6 leading-relaxed group-hover:text-gray-300 transition-colors duration-300">
                   {workshop.description}
                 </p>
 
-                {/* Workshop Details */}
                 <div className="space-y-3 mb-8">
                   <div className="flex items-center space-x-3 text-gray-500 group-hover:text-gray-400 transition-colors">
                     <Clock className="w-4 h-4" />
@@ -212,7 +226,6 @@ const WorkshopsPage: React.FC<WorkshopsPageProps> = ({ setLoading }) => {
                   </div>
                 </div>
 
-                {/* CTA Button */}
                 <Link
                   to={`/workshop/${workshop.id}`}
                   onClick={handleNavigation}
