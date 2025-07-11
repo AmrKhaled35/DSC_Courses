@@ -114,6 +114,11 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
               "Put your machine learning skills to the test with a comprehensive project that demonstrates your understanding.",
           },
           {
+            title: "ML Project Break - Apply your knowledge",
+            description:
+              "Put your machine learning skills to the test with a comprehensive project that demonstrates your understanding.",
+          },
+          {
             title:
               "Introduction to Neural Networks & Building Deep Neural Networks",
             description:
@@ -150,22 +155,22 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
               "Explore the revolutionary transformer architecture that powers modern language models like GPT and BERT.",
           },
           {
-            title: "DL Project Break - Build your portfolio",
+            title: "DL Project ",
             description:
               "Create an impressive deep learning project that showcases your skills to potential employers.",
           },
           {
-            title: "Advanced AI Topics",
+            title: "-",
             description:
               "Explore cutting-edge AI research including GANs, reinforcement learning, and emerging architectures.",
           },
           {
-            title: "Model Deployment & Production",
+            title: "-",
             description:
               "Learn to deploy your AI models to production environments using cloud platforms and containerization.",
           },
           {
-            title: "Final Project Presentation",
+            title: "-",
             description:
               "Present your capstone AI project, demonstrating your journey from beginner to AI practitioner.",
           },
