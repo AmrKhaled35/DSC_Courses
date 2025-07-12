@@ -79,8 +79,8 @@ const LandingPage: React.FC<LandingPageProps> = ({ setLoading }) => {
             </h1>
 
             <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Join Developer Student Clubs for an intensive 10-week journey
-              across 6 cutting-edge technology tracks. From AI to Cybersecurity,
+              Join Developer Student Clubs for an intensive 9-week journey
+              across 7 cutting-edge technology tracks. From AI to Cybersecurity,
               we'll guide you from beginner to professional.
             </p>
 
@@ -88,7 +88,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ setLoading }) => {
             <div className="inline-flex items-center space-x-2 bg-gray-800/50 rounded-full px-6 py-3 mb-12 border border-gray-700">
               <Sparkles className="w-5 h-5 text-green-400" />
               <span className="text-green-400 font-semibold">
-                10 Weeks • 6 Tracks • Unlimited Potential
+                9 Weeks • 7 Tracks • Unlimited Potential
               </span>
             </div>
 
@@ -166,8 +166,8 @@ const LandingPage: React.FC<LandingPageProps> = ({ setLoading }) => {
               </span>
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Six comprehensive tracks designed to take you from beginner to
-              professional in just 10 weeks
+              7 comprehensive tracks designed to take you from beginner to
+              professional in just 9 weeks
             </p>
           </div>
 
