@@ -984,7 +984,7 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
           <div className="mb-16">
             <div className="bg-gray-900/50 backdrop-blur-md rounded-3xl p-8 border border-gray-800">
               <h3 className="text-2xl font-bold text-white mb-8 text-center">
-                10-Week Schedule
+                9-Week Schedule
               </h3>
               <div
                 className="grid gap-4"
