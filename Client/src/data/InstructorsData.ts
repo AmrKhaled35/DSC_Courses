@@ -176,3 +176,14 @@ export const InstructorsAi = [
     }
   
 ];
+import Ammar from '../assets/Video/Ammar.jpeg'
+import AmmarR from '../assets/Video/PDF/Ammar.pdf'
+export const InstructorsVideo = [
+    {
+        name: "Ammar Yasser",
+        image: Ammar,
+        expertise: ["Video Editing"],
+        cv: AmmarR,
+        linkedin : "https://www.linkedin.com/in/ammar-yasser-ab549325b/"
+    }
+];

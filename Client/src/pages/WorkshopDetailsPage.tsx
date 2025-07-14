@@ -9,8 +9,9 @@ import {
   InstructorsMobile,
   InstructorsUI,
   InstructorsCyber,
+  InstructorsVideo,
 } from "../data/InstructorsData";
-import { ArrowLeft, Code2, Download, Linkedin } from "lucide-react";
+import { ArrowLeft, Download, Linkedin } from "lucide-react";
 
 interface WorkshopDetailsPageProps {
   setLoading: (loading: boolean) => void;
@@ -39,6 +40,8 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
       setInstructors(InstructorsUI);
     } else if (workshopData?.id === "cybersecurity") {
       setInstructors(InstructorsCyber);
+    }else {
+      setInstructors(InstructorsVideo);
     }
   }, [id]);
 
@@ -1094,7 +1097,7 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
         {workshop?.id !== "uiux" &&
           workshop?.id !== "frontend" &&
           workshop?.id !== "backend" &&
-          workshop?.id !== "cybersecurity" && workshop?.id !== "mobile" && (
+          workshop?.id !== "cybersecurity" && workshop?.id !== "mobile" && workshop?.id !== "videoEditing" && (
             <div className="absolute inset-0 z-10 backdrop-blur-md bg-black/30 flex items-center justify-center rounded-2xl">
               <div
                 className="max-w-2xl px-6 text-center cursor-pointer transition-all duration-300"
@@ -1129,6 +1132,7 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
               workshop?.id !== "frontend" &&
               workshop?.id !== "backend" &&
               workshop?.id !== "cybersecurity"
+              && workshop?.id !== "videoEditing"
                 && workshop?.id !== "mobile"
                 ? "opacity-30 pointer-events-none"
                 : ""
