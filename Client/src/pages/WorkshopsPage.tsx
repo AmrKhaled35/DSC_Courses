@@ -153,7 +153,7 @@ const WorkshopsPage: React.FC<WorkshopsPageProps> = ({ setLoading }) => {
           <div className="inline-flex items-center space-x-2 bg-gray-800/50 rounded-full px-6 py-3 mb-8 border border-gray-700">
             <Star className="w-5 h-5 text-green-400" />
             <span className="text-green-400 font-semibold">
-              6 Comprehensive Tracks Available
+              7 Comprehensive Tracks Available
             </span>
           </div>
 
