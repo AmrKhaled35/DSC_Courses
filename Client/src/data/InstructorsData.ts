@@ -2,6 +2,7 @@ import Emad from "../assets/front/Emad.jpeg";
 import EmadR from '../assets/front/PDF/Emad-M.Mostafa-DSC-Resume.pdf'
 import Ahmad_Samir from "../assets/front/Ahmad_Samir.jpeg";
 import AhmadR from '../assets/front/PDF/ahmed samir resume.pdf'
+import Rawan from '../assets/AI/Rawan.jpg'
 export const InstructorsFront = [
     {
       name: "Emad M.Mostafa",
@@ -27,9 +28,9 @@ export const InstructorsFront = [
   export const InstructorsBack = [
     {
       name: "Afnan Sayed Mahmoud",
-      image: Afnan,
+      image: Rawan,
       expertise: ["backend engineer", "ASP.NET Core", "C#"],
-      cv: AfnanR,
+      cv: "",
       linkedin : "https://www.linkedin.com/in/afnan-sayed-5354a0262/"
     },
     {
@@ -125,7 +126,7 @@ import JO from '../assets/AI/Jo.jpg'
 import JOR from '../assets/AI/PDF/YousifEdrisLotfyResume 1.pdf'
 import Yossif from '../assets/AI/Mostafa.jpg'
 import YossifR from '../assets/AI/PDF/Youssef_Moustafa_Resume.pdf'
-import Rawan from '../assets/AI/Rawan.jpg'
+
 import RawanR from '../assets/AI/PDF/Rawan Shoaib 1.pdf'
 export const InstructorsAi = [
     {

@@ -259,7 +259,8 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
           },
           {
             title: "Reporting",
-            description: "Master how to document, present, and communicate security findings effectively to stakeholders.",            
+            description:
+              "Master how to document, present, and communicate security findings effectively to stakeholders.",
           },
           {
             title: "-",
@@ -1090,29 +1091,32 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
       {/* Instructors Section */}
       <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gray-900/30">
         {/* Blur Overlay with Dynamic Text */}
-        {workshop?.id !== "uiux" && workshop?.id !== "frontend" && workshop?.id !== "backend"  &&  workshop?.id !== "cybersecurity" &&(
-          <div className="absolute inset-0 z-10 backdrop-blur-md bg-black/30 flex items-center justify-center rounded-2xl">
-            <div
-              className="max-w-2xl px-6 text-center cursor-pointer transition-all duration-300"
-              onMouseEnter={() => setHovered(true)}
-              onMouseLeave={() => setHovered(false)}
-            >
-              <h2 className="text-3xl md:text-5xl font-semibold italic text-white flex items-center justify-center gap-x-4 flex-wrap">
-                {hovered ? (
-                  <div className="flex items-center">
-                    Stay tuned for the announcement on social media!
-                  </div>
-                ) : (
-                  <>
-                    <Zap className="w-14 h-14 text-green-400 animate-pulse" />
-                    Coming Soon
-                    <Zap className="w-14 h-14 text-blue-400 animate-pulse" />
-                  </>
-                )}
-              </h2>
+        {workshop?.id !== "uiux" &&
+          workshop?.id !== "frontend" &&
+          workshop?.id !== "backend" &&
+          workshop?.id !== "cybersecurity" && (
+            <div className="absolute inset-0 z-10 backdrop-blur-md bg-black/30 flex items-center justify-center rounded-2xl">
+              <div
+                className="max-w-2xl px-6 text-center cursor-pointer transition-all duration-300"
+                onMouseEnter={() => setHovered(true)}
+                onMouseLeave={() => setHovered(false)}
+              >
+                <h2 className="text-3xl md:text-5xl font-semibold italic text-white flex items-center justify-center gap-x-4 flex-wrap">
+                  {hovered ? (
+                    <div className="flex items-center">
+                      Stay tuned for the announcement on social media!
+                    </div>
+                  ) : (
+                    <>
+                      <Zap className="w-14 h-14 text-green-400 animate-pulse" />
+                      Coming Soon
+                      <Zap className="w-14 h-14 text-blue-400 animate-pulse" />
+                    </>
+                  )}
+                </h2>
+              </div>
             </div>
-          </div>
-        )}
+          )}
 
         <div className="max-w-7xl mx-auto relative z-0">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-16 text-center">
@@ -1121,7 +1125,12 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
 
           <div
             className={`flex flex-wrap justify-center gap-8 ${
-              (workshop?.id !== "uiux" && workshop?.id !== "frontend" && workshop?.id !== "backend"  &&  workshop?.id !== "cybersecurity")  ? "opacity-30 pointer-events-none" : ""
+              workshop?.id !== "uiux" &&
+              workshop?.id !== "frontend" &&
+              workshop?.id !== "backend" &&
+              workshop?.id !== "cybersecurity"
+                ? "opacity-30 pointer-events-none"
+                : ""
             }`}
           >
             {instructors.map((instructor, index) => (
@@ -1156,13 +1165,16 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
                   </div>
 
                   <div className="flex justify-center space-x-4">
-                    <a
-                      href={instructor.cv}
-                      className="flex items-center space-x-2 bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded-full transition-colors"
-                    >
-                      <Download className="w-4 h-4" />
-                      <span>CV</span>
-                    </a>
+                    {instructor.cv && instructor.cv.trim() !== "" && (
+                      <a
+                        href={instructor.cv}
+                        className="flex items-center space-x-2 bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded-full transition-colors"
+                      >
+                        <Download className="w-4 h-4" />
+                        <span>CV</span>
+                      </a>
+                    )}
+
                     <a
                       href={instructor.linkedin}
                       className="flex items-center space-x-2 bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded-full transition-colors"
