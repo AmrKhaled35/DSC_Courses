@@ -1094,7 +1094,7 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
         {workshop?.id !== "uiux" &&
           workshop?.id !== "frontend" &&
           workshop?.id !== "backend" &&
-          workshop?.id !== "cybersecurity" && (
+          workshop?.id !== "cybersecurity" && workshop?.id !== "mobile" && (
             <div className="absolute inset-0 z-10 backdrop-blur-md bg-black/30 flex items-center justify-center rounded-2xl">
               <div
                 className="max-w-2xl px-6 text-center cursor-pointer transition-all duration-300"
@@ -1129,6 +1129,7 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
               workshop?.id !== "frontend" &&
               workshop?.id !== "backend" &&
               workshop?.id !== "cybersecurity"
+                && workshop?.id !== "mobile"
                 ? "opacity-30 pointer-events-none"
                 : ""
             }`}

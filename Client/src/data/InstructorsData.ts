@@ -52,6 +52,8 @@ export const InstructorsFront = [
   import Asmaa from '../assets/Mobail/asmaa.png'
   import FaroukR from '../assets/Mobail/PDF/Ahmed Farouk.pdf'
   import AsmaaR from '../assets/Mobail/PDF/Asmaa Muhammed .pdf'
+  import fawzy from '../assets/Mobail/Fawzy.jpeg'
+  import fawzyR from '../assets/Mobail/PDF/fawzy.pdf'
   export const InstructorsMobile = [
     {
       name: "Ahmed Farouk",
@@ -66,6 +68,13 @@ export const InstructorsFront = [
       expertise: ["Mobile Application Development", "Flutter", "Dart"],
       cv: AsmaaR,
       linkedin : "https://www.linkedin.com/in/asmaa-mohammed-dev/"
+    },
+    {
+      name: "Mohamed Fawzy",
+      image: fawzy,
+      expertise: ["Mobile Application Development", "Flutter", "Dart"],
+      cv: fawzyR,
+      linkedin : "https://www.linkedin.com/in/mohamed-fawzy-721176268/"
     },
   ];
   import Zyad from '../assets/UI/Zyad.jpg'
