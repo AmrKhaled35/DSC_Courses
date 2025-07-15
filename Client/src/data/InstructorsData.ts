@@ -89,7 +89,7 @@ export const InstructorsFront = [
         },  
     ]
 import Tamer from '../assets/Cyber/Tamar.jpeg'
-import TamerR from '../assets/Cyber/PDF/Abdelrahman Tamer Mahmoud.CV.pdf'
+// import TamerR from '../assets/Cyber/PDF/Abdelrahman Tamer Mahmoud.CV.pdf'
 import Ramadan from '../assets/Cyber/Ramadan.jpeg'
 import RamadanR from '../assets/Cyber/PDF/Ramadan_Ragab_Resume.pdf'
 import Ashraf from  '../assets/Cyber/Ashraf.jpeg'
@@ -101,7 +101,7 @@ export const InstructorsCyber = [
         name: "Abdelrahman Tamer Mahmoud",
         image: Tamer,
         expertise: ["Cybersecurity", "Network Security"],
-        cv: TamerR,
+        cv: "",
         linkedin : "https://www.linkedin.com/in/abdelrahman-tamer-6a932924a/"
     },
     {
