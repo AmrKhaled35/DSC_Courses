@@ -129,7 +129,7 @@ export const InstructorsCyber = [
 ];
 import Ahmad from '../assets/AI/Ahmad.jpg'
 import AhmadRR from '../assets/AI/PDF/Ahmed_CV_2025___June.pdf'
-import Nagham from '../assets/AI/Naghm.jpg'
+import Nagham from '../assets/AI/نغم.jpg'
 import NaghamR from '../assets/AI/PDF/Nagham Wael-1.pdf'
 import JO from '../assets/AI/Jo.jpg'
 import JOR from '../assets/AI/PDF/YousifEdrisLotfyResume 1.pdf'
@@ -158,7 +158,7 @@ export const InstructorsAi = [
     },
     {
         name: "Nagham Wael",
-        image: Rawan,
+        image: Nagham,
         expertise: ["Machine Learning", "AI", "Python"],
         cv: NaghamR,
         linkedin : "https://www.linkedin.com/in/nagham-wael-5aa70a318/"
