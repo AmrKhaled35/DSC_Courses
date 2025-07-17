@@ -1151,7 +1151,7 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
                   >
                     <div className="absolute top-1 right-1 bg-gradient-to-b from-yellow-500 to-yellow-700 text-yellow-50 px-5 py-2 rounded-full text-sm font-bold border-2 border-gray-900 shadow-lg flex items-center gap-2">
                       <Crown className="w-4 h-4 text-yellow-100" />
-                      Chief AI
+                      AI Chief
                     </div>
 
                     <div className="text-center">
@@ -1215,7 +1215,7 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
                   >
                     <div className="absolute top-1 right-1 bg-gradient-to-b from-gray-300 to-gray-500 text-gray-900 px-5 py-2 rounded-full text-sm font-bold border-2 border-gray-900 shadow-lg flex items-center gap-2">
                       <Star className="w-4 h-4 text-gray-900" />
-                        Head AI
+                        AI Head
                     </div>
                     <div className="text-center">
                       <div className="w-24 h-24 mx-auto mb-6 rounded-full overflow-hidden border-4 border-gray-700">
