@@ -1201,7 +1201,7 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
                 ))}
             </div>
 
-            <div className="flex  justify-center gap-8 w-full">
+            <div className="flex flex-wrap justify-center gap-8 w-full">
               {instructors
                 .filter(
                   (ins) =>
