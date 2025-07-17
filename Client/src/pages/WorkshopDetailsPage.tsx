@@ -1147,7 +1147,7 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
                 .map((instructor, index) => (
                   <div
                     key={index}
-                    className="w-[45%]  bg-gray-900/50 backdrop-blur-md rounded-3xl p-10 border border-gray-800 hover:border-gray-600 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl"
+                    className="md:w-[45%]  w-full bg-gray-900/50 backdrop-blur-md rounded-3xl p-10 border border-gray-800 hover:border-gray-600 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl"
                   >
                     <div className="absolute top-1 right-1 bg-gradient-to-b from-yellow-500 to-yellow-700 text-yellow-50 px-5 py-2 rounded-full text-sm font-bold border-2 border-gray-900 shadow-lg flex items-center gap-2">
                       <Crown className="w-4 h-4 text-yellow-100" />
@@ -1201,7 +1201,7 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
                 ))}
             </div>
 
-            <div className="flex flex justify-center gap-8 w-full">
+            <div className="flex  justify-center gap-8 w-full">
               {instructors
                 .filter(
                   (ins) =>
@@ -1211,7 +1211,7 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
                 .map((instructor, index) => (
                   <div
                     key={index}
-                    className="w-[40%] bg-gray-900/50 backdrop-blur-md rounded-3xl p-8 border border-gray-800 hover:border-gray-600 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl"
+                    className="md:w-[40%] w-full bg-gray-900/50 backdrop-blur-md rounded-3xl p-8 border border-gray-800 hover:border-gray-600 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl"
                   >
                     <div className="absolute top-1 right-1 bg-gradient-to-b from-gray-300 to-gray-500 text-gray-900 px-5 py-2 rounded-full text-sm font-bold border-2 border-gray-900 shadow-lg flex items-center gap-2">
                       <Star className="w-4 h-4 text-gray-900" />
