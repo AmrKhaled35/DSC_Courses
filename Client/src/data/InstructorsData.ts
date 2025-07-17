@@ -144,6 +144,10 @@ import Menna from '../assets/AI/Menna2.jpeg'
 import MennaR from '../assets/AI/PDF/MennaAi.pdf'
 import Gad from '../assets/AI/Gadalla.jpeg'
 import GadR from '../assets/AI/PDF/Ahmed Gadalla CV 2025.pdf'
+import aty from '../assets/AI/aty.jpeg'
+import atyR from '../assets/AI/PDF/Mahmoud-Abdelaty_CV.pdf'
+import zzz from '../assets/AI/zzz.jpg'
+import zzzR from '../assets/AI/PDF/ZiadAmerResume.pdf'
 export const InstructorsAi = [
     {
         name: "Ahmed Labib",
@@ -212,6 +216,20 @@ export const InstructorsAi = [
         expertise: ["AI Engineer", "Data Scientist"],
         cv: GadR,
         linkedin : "https://www.linkedin.com/in/ahmad-gadalla-717a55242/"
+    },
+    {
+        name: "Mahmoud Abdelaty",
+        image: aty,
+        expertise: ["AI Engineer", "Data Scientist"],
+        cv: atyR,
+        linkedin : "https://www.linkedin.com/in/mahmoud-m007/"
+    },
+    {
+        name: "Ziad Amer",
+        image: zzz,
+        expertise: ["AI Engineer", "Data Scientist"],
+        cv: zzzR,
+        linkedin : "https://www.linkedin.com/in/ziad-amer-142423337/"
     }
   
 ];
