@@ -135,8 +135,15 @@ import JO from '../assets/AI/Jo.jpg'
 import JOR from '../assets/AI/PDF/YousifEdrisLotfyResume 1.pdf'
 import Yossif from '../assets/AI/Mostafa.jpg'
 import YossifR from '../assets/AI/PDF/Youssef_Moustafa_Resume.pdf'
-
 import RawanR from '../assets/AI/PDF/Rawan Shoaib 1.pdf'
+import Shahab from '../assets/AI/Sehab.jpeg'
+import ShahabR from '../assets/AI/PDF/Shehab_Diab_CV.pdf'
+import Elfayoumy from '../assets/AI/Elfayoumy.jpeg'
+import ElfayoumyR from '../assets/AI/PDF/Elfayoumy.pdf'
+import Menna from '../assets/AI/Menna2.jpeg'
+import MennaR from '../assets/AI/PDF/MennaAi.pdf'
+import Gad from '../assets/AI/Gadalla.jpeg'
+import GadR from '../assets/AI/PDF/Ahmed Gadalla CV 2025.pdf'
 export const InstructorsAi = [
     {
         name: "Ahmed Labib",
@@ -173,6 +180,38 @@ export const InstructorsAi = [
         expertise: ["Machine Learning", "AI", "Python"],
         cv: RawanR,
         linkedin : "https://www.linkedin.com/in/rawan-shoaib-a00471242/"
+    }
+    ,
+    {
+        name: "Shehab Diab",
+        image: Shahab,
+        expertise: ["AI Engineer", "Data Analyst", "Software Engineer"],
+        cv: ShahabR,
+        linkedin : "https://www.linkedin.com/in/shehab-diab/"
+    }
+    ,
+    {
+        name: "Ziyad El-Fayoumy",
+        image: Elfayoumy,
+        expertise: ["AI Engineer", "Biomedical Engineer"],
+        cv: ElfayoumyR,
+        linkedin : "https://www.linkedin.com/in/ziyad-el-fayoumy/"
+    }
+    ,
+    {
+        name: "Menna Elminshawy",
+        image: Menna,
+        expertise: ["AI Engineer", "Data Scientist"],
+        cv: MennaR,
+        linkedin : "https://www.linkedin.com/in/menna-elminshawy-5187a2248/"
+    }
+    ,
+    {
+        name: "Ahmed Gadalla",
+        image: Gad,
+        expertise: ["AI Engineer", "Data Scientist"],
+        cv: GadR,
+        linkedin : "https://www.linkedin.com/in/ahmad-gadalla-717a55242/"
     }
   
 ];

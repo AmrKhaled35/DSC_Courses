@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Zap } from "lucide-react";
+import { Crown , Star } from "lucide-react";
 
 import {
   InstructorsFront,
@@ -40,7 +41,7 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
       setInstructors(InstructorsUI);
     } else if (workshopData?.id === "cybersecurity") {
       setInstructors(InstructorsCyber);
-    }else {
+    } else {
       setInstructors(InstructorsVideo);
     }
   }, [id]);
@@ -1090,14 +1091,15 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
           </div>
         </div>
       </section>
-
       {/* Instructors Section */}
       <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gray-900/30">
-        {/* Blur Overlay with Dynamic Text */}
         {workshop?.id !== "uiux" &&
           workshop?.id !== "frontend" &&
           workshop?.id !== "backend" &&
-          workshop?.id !== "cybersecurity" && workshop?.id !== "mobile" && workshop?.id !== "videoEditing" && (
+          workshop?.id !== "cybersecurity" &&
+          workshop?.id !== "mobile" &&
+          workshop?.id !== "videoEditing" &&
+          workshop?.id !== "ai-ml" && (
             <div className="absolute inset-0 z-10 backdrop-blur-md bg-black/30 flex items-center justify-center rounded-2xl">
               <div
                 className="max-w-2xl px-6 text-center cursor-pointer transition-all duration-300"
@@ -1127,70 +1129,200 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
           </h2>
 
           <div
-            className={`flex flex-wrap justify-center gap-8 ${
+            className={`flex flex-col items-center gap-12 ${
               workshop?.id !== "uiux" &&
               workshop?.id !== "frontend" &&
               workshop?.id !== "backend" &&
-              workshop?.id !== "cybersecurity"
-              && workshop?.id !== "videoEditing"
-                && workshop?.id !== "mobile"
+              workshop?.id !== "cybersecurity" &&
+              workshop?.id !== "videoEditing" &&
+              workshop?.id !== "mobile" &&
+              workshop?.id !== "ai-ml"
                 ? "opacity-30 pointer-events-none"
                 : ""
             }`}
           >
-            {instructors.map((instructor, index) => (
-              <div
-                key={index}
-                className="w-full sm:w-[45%] lg:w-[30%] bg-gray-900/50 backdrop-blur-md rounded-3xl p-8 border border-gray-800 hover:border-gray-600 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl"
-              >
-                <div className="text-center">
-                  <div className="w-24 h-24 mx-auto mb-6 rounded-full overflow-hidden border-4 border-gray-700">
-                    <img
-                      src={instructor.image}
-                      alt={instructor.name}
-                      className="w-full h-full object-cover"
-                    />
+            <div className="flex justify-center w-full">
+              {instructors
+                .filter((ins) => ins.name === "Shehab Diab")
+                .map((instructor, index) => (
+                  <div
+                    key={index}
+                    className="w-[45%]  bg-gray-900/50 backdrop-blur-md rounded-3xl p-10 border border-gray-800 hover:border-gray-600 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl"
+                  >
+                    <div className="absolute top-1 right-1 bg-gradient-to-b from-yellow-500 to-yellow-700 text-yellow-50 px-5 py-2 rounded-full text-sm font-bold border-2 border-gray-900 shadow-lg flex items-center gap-2">
+                      <Crown className="w-4 h-4 text-yellow-100" />
+                      Chief AI
+                    </div>
+
+                    <div className="text-center">
+                      <div className="w-28 h-28 mx-auto mb-6 rounded-full overflow-hidden border-4 border-gray-700">
+                        <img
+                          src={instructor.image}
+                          alt={instructor.name}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      <h3 className="text-2xl font-bold text-white mb-2">
+                        {instructor.name}
+                      </h3>
+                      <p className="text-gray-400 mb-4">
+                        {instructor.experience}
+                      </p>
+                      <div className="flex flex-wrap justify-center gap-2 mb-6">
+                        {instructor.expertise.map((skill, skillIndex) => (
+                          <span
+                            key={skillIndex}
+                            className={`px-3 py-1 bg-gradient-to-r ${workshop.gradient} text-white text-sm rounded-full`}
+                          >
+                            {skill}
+                          </span>
+                        ))}
+                      </div>
+                      <div className="flex justify-center space-x-4">
+                        {instructor.cv && instructor.cv.trim() !== "" && (
+                          <a
+                            href={instructor.cv}
+                            className="flex items-center space-x-2 bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded-full transition-colors"
+                          >
+                            <Download className="w-4 h-4" />
+                            <span>CV</span>
+                          </a>
+                        )}
+                        <a
+                          href={instructor.linkedin}
+                          className="flex items-center space-x-2 bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded-full transition-colors"
+                        >
+                          <Linkedin className="w-4 h-4" />
+                          <span>LinkedIn</span>
+                        </a>
+                      </div>
+                    </div>
                   </div>
+                ))}
+            </div>
 
-                  <h3 className="text-xl font-bold text-white mb-2">
-                    {instructor.name}
-                  </h3>
-
-                  <p className="text-gray-400 mb-4">{instructor.experience}</p>
-
-                  <div className="flex flex-wrap justify-center gap-2 mb-6">
-                    {instructor.expertise.map((skill, skillIndex) => (
-                      <span
-                        key={skillIndex}
-                        className={`px-3 py-1 bg-gradient-to-r ${workshop.gradient} text-white text-sm rounded-full`}
-                      >
-                        {skill}
-                      </span>
-                    ))}
+            <div className="flex flex justify-center gap-8 w-full">
+              {instructors
+                .filter(
+                  (ins) =>
+                    ins.name === "Ziyad El-Fayoumy" ||
+                    ins.name === "Menna Elminshawy"
+                )
+                .map((instructor, index) => (
+                  <div
+                    key={index}
+                    className="w-[40%] bg-gray-900/50 backdrop-blur-md rounded-3xl p-8 border border-gray-800 hover:border-gray-600 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl"
+                  >
+                    <div className="absolute top-1 right-1 bg-gradient-to-b from-gray-300 to-gray-500 text-gray-900 px-5 py-2 rounded-full text-sm font-bold border-2 border-gray-900 shadow-lg flex items-center gap-2">
+                      <Star className="w-4 h-4 text-gray-900" />
+                        Head AI
+                    </div>
+                    <div className="text-center">
+                      <div className="w-24 h-24 mx-auto mb-6 rounded-full overflow-hidden border-4 border-gray-700">
+                        <img
+                          src={instructor.image}
+                          alt={instructor.name}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      <h3 className="text-xl font-bold text-white mb-2">
+                        {instructor.name}
+                      </h3>
+                      <p className="text-gray-400 mb-4">
+                        {instructor.experience}
+                      </p>
+                      <div className="flex flex-wrap justify-center gap-2 mb-6">
+                        {instructor.expertise.map((skill, skillIndex) => (
+                          <span
+                            key={skillIndex}
+                            className={`px-3 py-1 bg-gradient-to-r ${workshop.gradient} text-white text-sm rounded-full`}
+                          >
+                            {skill}
+                          </span>
+                        ))}
+                      </div>
+                      <div className="flex justify-center space-x-4">
+                        {instructor.cv && instructor.cv.trim() !== "" && (
+                          <a
+                            href={instructor.cv}
+                            className="flex items-center space-x-2 bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded-full transition-colors"
+                          >
+                            <Download className="w-4 h-4" />
+                            <span>CV</span>
+                          </a>
+                        )}
+                        <a
+                          href={instructor.linkedin}
+                          className="flex items-center space-x-2 bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded-full transition-colors"
+                        >
+                          <Linkedin className="w-4 h-4" />
+                          <span>LinkedIn</span>
+                        </a>
+                      </div>
+                    </div>
                   </div>
+                ))}
+            </div>
 
-                  <div className="flex justify-center space-x-4">
-                    {instructor.cv && instructor.cv.trim() !== "" && (
-                      <a
-                        href={instructor.cv}
-                        className="flex items-center space-x-2 bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded-full transition-colors"
-                      >
-                        <Download className="w-4 h-4" />
-                        <span>CV</span>
-                      </a>
-                    )}
-
-                    <a
-                      href={instructor.linkedin}
-                      className="flex items-center space-x-2 bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded-full transition-colors"
-                    >
-                      <Linkedin className="w-4 h-4" />
-                      <span>LinkedIn</span>
-                    </a>
+            <div className="flex flex-wrap justify-center gap-8">
+              {instructors
+                .filter(
+                  (ins) =>
+                    ins.name !== "Shehab Diab" &&
+                    ins.name !== "Ziyad El-Fayoumy" &&
+                    ins.name !== "Menna Elminshawy"
+                )
+                .map((instructor, index) => (
+                  <div
+                    key={index}
+                    className="w-full sm:w-[45%] lg:w-[30%] bg-gray-900/50 backdrop-blur-md rounded-3xl p-8 border border-gray-800 hover:border-gray-600 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl"
+                  >
+                    <div className="text-center">
+                      <div className="w-24 h-24 mx-auto mb-6 rounded-full overflow-hidden border-4 border-gray-700">
+                        <img
+                          src={instructor.image}
+                          alt={instructor.name}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      <h3 className="text-xl font-bold text-white mb-2">
+                        {instructor.name}
+                      </h3>
+                      <p className="text-gray-400 mb-4">
+                        {instructor.experience}
+                      </p>
+                      <div className="flex flex-wrap justify-center gap-2 mb-6">
+                        {instructor.expertise.map((skill, skillIndex) => (
+                          <span
+                            key={skillIndex}
+                            className={`px-3 py-1 bg-gradient-to-r ${workshop.gradient} text-white text-sm rounded-full`}
+                          >
+                            {skill}
+                          </span>
+                        ))}
+                      </div>
+                      <div className="flex justify-center space-x-4">
+                        {instructor.cv && instructor.cv.trim() !== "" && (
+                          <a
+                            href={instructor.cv}
+                            className="flex items-center space-x-2 bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded-full transition-colors"
+                          >
+                            <Download className="w-4 h-4" />
+                            <span>CV</span>
+                          </a>
+                        )}
+                        <a
+                          href={instructor.linkedin}
+                          className="flex items-center space-x-2 bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded-full transition-colors"
+                        >
+                          <Linkedin className="w-4 h-4" />
+                          <span>LinkedIn</span>
+                        </a>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-            ))}
+                ))}
+            </div>
           </div>
         </div>
       </section>
