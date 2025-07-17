@@ -158,7 +158,7 @@ export const InstructorsAi = [
     },
     {
         name: "Nagham Wael",
-        image: Nagham,
+        image: Rawan,
         expertise: ["Machine Learning", "AI", "Python"],
         cv: NaghamR,
         linkedin : "https://www.linkedin.com/in/nagham-wael-5aa70a318/"
