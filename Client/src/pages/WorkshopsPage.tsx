@@ -22,7 +22,7 @@ const WorkshopsPage: React.FC<WorkshopsPageProps> = ({ setLoading }) => {
     {
       id: "ai-ml",
       icon: "🤖",
-      title: "AI & Machine Learning",
+      title: "AI & Data Science",
       description:
         "Master artificial intelligence and machine learning from fundamentals to advanced neural networks",
       duration: "9 weeks",

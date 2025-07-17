@@ -58,7 +58,7 @@ const WorkshopDetailsPage: React.FC<WorkshopDetailsPageProps> = ({
       "ai-ml": {
         id: "ai-ml",
         icon: "🤖",
-        title: "AI & Machine Learning",
+        title: "AI & Data Science",
         description:
           "Embark on a transformative journey into the world of Artificial Intelligence and Machine Learning. This comprehensive track will take you from understanding basic concepts to building sophisticated neural networks and deploying AI solutions.",
         story:
