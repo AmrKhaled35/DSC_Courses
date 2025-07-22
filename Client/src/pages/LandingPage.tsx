@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect , useState } from "react";
 import { Link } from "react-router-dom";
 import {
   ArrowRight,
@@ -17,6 +17,7 @@ interface LandingPageProps {
 }
 
 const LandingPage: React.FC<LandingPageProps> = ({ setLoading }) => {
+  const [showIntroBox, setShowIntroBox] = useState(true);
   useEffect(() => {
     document.title = "DSC Courses";
   }, []);
@@ -30,13 +31,48 @@ const LandingPage: React.FC<LandingPageProps> = ({ setLoading }) => {
 
   return (
     <div className="min-h-screen bg-black">
+      {showIntroBox && (
+        <div className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center px-4">
+          <div className="relative bg-gray-900 border border-gray-700 rounded-2xl px-8 py-12 text-center max-w-md w-full shadow-2xl">
+            <button
+              onClick={() => setShowIntroBox(false)}
+              className="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold focus:outline-none"
+              aria-label="Close"
+            >
+              ×
+            </button>
+
+            <h2 className="text-3xl font-bold text-white mb-6">Join Us Now</h2>
+            <p className="text-gray-300 mb-6">
+              Join the DSC program and start your journey in the tech world from
+              zero to professional.
+            </p>
+            <button
+              onClick={() => {
+                setShowIntroBox(false);
+                window.open(
+                  "https://docs.google.com/forms/d/e/1FAIpQLScOVzP3CfRZHO_jwDpMYh9NSaBqAAcMDD5LQVFyuKoIRwU3_w/viewform",
+                  "_blank"
+                )
+              }
+              }
+              className="bg-gradient-to-r from-green-400 to-blue-500 text-white px-8 py-3 rounded-full font-bold text-lg hover:scale-105 transform transition"
+            >
+              Register Now
+            </button>
+          </div>
+        </div>
+      )}
+
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-black/80 backdrop-blur-md border-b border-gray-800 z-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center space-x-3">
               <div className="w-10 h-10 bg-gradient-to-r from-green-400 to-blue-500 rounded-lg flex items-center justify-center">
-                <span className="text-white text-lg font-bold"><span className="mb-6">&lt;</span>//&gt;</span>
+                <span className="text-white text-lg font-bold">
+                  <span className="mb-6">&lt;</span>//&gt;
+                </span>
               </div>
               <span className="text-xl font-bold text-white">DSC Courses</span>
             </div>
@@ -101,6 +137,19 @@ const LandingPage: React.FC<LandingPageProps> = ({ setLoading }) => {
                 <span>Start Your Journey</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
+              <button
+              onClick={() => {
+                setShowIntroBox(false);
+                window.open(
+                  "https://docs.google.com/forms/d/e/1FAIpQLScOVzP3CfRZHO_jwDpMYh9NSaBqAAcMDD5LQVFyuKoIRwU3_w/viewform",
+                  "_blank"
+                )
+              }
+              }
+              className="bg-gradient-to-r from-green-400 to-blue-500 text-white px-8 py-3 rounded-full font-bold text-lg hover:scale-105 transform transition"
+            >
+              Register Now
+            </button>
             </div>
           </div>
 
